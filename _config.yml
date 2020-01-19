@@ -9,10 +9,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "de-DE"
-title                    : "Diletta C."
+title                    : "Projects Portfolio"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "My Project Portfolio"
+name                     : "Diletta Cal"
+description              : "Projects Portfolio"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -84,9 +84,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Diletta C."
+  name             : "Diletta Cal"
   avatar           : "/images/bio-pic-2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Project Portfolio"
+  bio              : "Computer Scientist | Computer Linguist | Machine Learning Enthusiast"
   location         : "Berlin, Germany"
   email            :
   uri              :
