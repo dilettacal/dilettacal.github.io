@@ -22,6 +22,22 @@ export default function Footer() {
             developerFolio
           </a>
         </p>
+        <p
+          className={
+            isDark
+              ? "dark-mode footer-text footer-credits"
+              : "footer-text footer-credits"
+          }
+        >
+          Icons from{" "}
+          <a href="https://simpleicons.org/" target="_blank" rel="noreferrer">
+            Simple Icons
+          </a>
+          {" and "}
+          <a href="https://www.svgrepo.com/" target="_blank" rel="noreferrer">
+            SVG Repo
+          </a>
+        </p>
       </div>
     </Fade>
   );
