@@ -35,7 +35,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/dilettacal",
   linkedin: "https://www.linkedin.com/in/dilettacal/",
-  gmail: "diletta.calussi@gmail.com",
+  gmail: "dilettacal.dev@gmail.com",
   gitlab: "",
   facebook: "",
   medium: "https://medium.com/@dilettacalussi",
@@ -173,7 +173,7 @@ const workExperiences = {
       company: "Freelance",
       companylogo: require("./assets/images/reboot_logo.png"),
       date: "Jan 2024 – Present",
-      desc: "Founder of a publishing company with focus on non-fiction books.",
+      desc: "Founder of a non fictionpublishing company.",
       descBullets: [
         "Managed small-scale publishing projects as a side activity, covering market and niche analysis, AI-assisted review mining, and targeted Amazon/Meta ad campaigns — applying data-driven methods and project management skills to improve visibility and profitability."
       ]
@@ -181,38 +181,39 @@ const workExperiences = {
     {
       role: "Senior Data Engineer",
       company: "CARIAD SE",
-      companylogo: require("./assets/images/cariad_logo.png"),
+      companylogo: require("./assets/images/cariad_tech_logo.jpeg"),
       date: "March 2022 – Present",
-      desc: "Data/AI Engineer in POI Management team and Pre-Development team.",
+      desc: "Data pipeliens, Data Science and AI Engineering",
       descBullets: [
-        "Contributed to the development of an AI based solution to predict customer survey responses.",
-        "Improved positional accuracy of 78,000+ charging POIs by engineering large-scale telemetry pipelines processing data from millions of vehicles, delivering over 1.3 M validated sessions biweekly across Volkswagen Group brands.",
-        "Designed and implemented the core session-creation algorithm for multibrand telemetry, reconstructing unordered events into real-time sessions that enabled analytics, clustering, and spatial validation.",
-        "Contributed to the migration from medallion architecture to Kubernetes-based microservices by refactoring ingestion and session-creation components; this process achieved roughly 65%% cost reduction while preserving stability and data quality.",
-        "Led code reviews and mentoring across data engineering and data science tasks, ensuring code quality, reproducibility, and adherence to best practices while supporting colleagues in model evaluation, exploratory analysis, and pipeline integration."
+        "Developed production-ready GenAI solutions for survey response prediction, feedback summarization and agent-based project management automation.",
+        "Improved positional accuracy of over 78,000 charging stations by designing and operating large-scale EV telemetry pipelines for millions of vehicles of the Volkswagen Group.",
+        "Significantly contributed to the migration from Databricks-Medallion architecture to Kubernetes-Microservices, achieving a reduction of operating costs by approximately 70% with increased stability of streaming pipelines.",
+        "Led code reviews, mentoring and knowledge sharing initiatives to ensure technical quality and prevent knowledge silos.",
+        "Conducted exploratory data analysis to ensure data integrity and data contract compliance; clarified anomalies in close collaboration with stakeholders."
       ]
     },
     {
       role: "NLU Software Engineer",
       company: "CARIAD SE",
-      companylogo: require("./assets/images/cariad_logo.png"),
-      date: "Jan 2020 – Feb 2022",
+      companylogo: require("./assets/images/cariad_tech_logo.jpeg"),
+      date: "Dec 2018 – Feb 2022 *",
       desc: "NLU Software Engineer for Group Digital Assistant.",
       descBullets: [
-        "Improved recognition accuracy and coverage for millions of drivers by delivering production NLU services for in-car assistants.",
-        "Enabled integration of NLU systems into embedded platforms by engineering Python- and Java-based toolchains for training, evaluation, and packaging of NLU models.",
-        "Extended assistant functionality by developing a Question Answering module using Azure Cognitive Services, enabling retrieval of domain knowledge beyond predefined commands.",
+        "Improved the recognition and classification accuracy of speech utterances in vehicle assistants by developing hybrid NLU models based on context-free grammars and Machine Learning methods.",
+        "Engineered Python- and Java-based toolchains to enable efficient training, evaluation and packaging of NLU models across different domains and languages.",
+        "Extended assistant functions by implementing a Question-Answering module based on Azure Cognitive Services.",
+        "* Supported NLU pre-development as a Work Study (Dec 2018 -- Aug 2019)."
       ]
     },
     {
-      role: "Software Engineer (Work Student)",
-      company: "Carmeq GmbH; Plunet GmbH",
-      // companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Dec 2018 - Aug 2019 ; Oct 2017 - Nov 2018",
-      desc: "Software Engineer (Work Student) in Automotive and Localization domains.",
+      role: "Early Career",
+      company: "Several Companies and Freelance",
+      companylogo: require("./assets/images/early_career.png"),
+      date: "2012 -- 2018",
+      desc: "Translator, Linguist and Software Engineer",
       descBullets: [
-        "At Carmeq GmbH: Supported the Pre-Development team with the development of NLU/NLP applications.",
-        "At Plunet GmbH: Extended the test automation suite with tests of integration of CAT Tools, e.g. XTM and Memsource (Java, Selenium, Cucumber)."
+        "At Plunet GmbH: Engineered automated integration tests for online CAT tools to ensure stable interfaces and processes as a Work Study.",
+        "At think global GmbH and as a Freelancer: Performed technical translation with a focus on (machine) translation and NLP-based automation and data preparation."
       ]
     }
   ]
@@ -223,13 +224,13 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects & Participation",
+  title: "Projects & Activities",
   subtitle: "Technical contributions and beyond",
   projects: [
     {
@@ -317,7 +318,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -341,7 +342,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -388,9 +389,9 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Are you hiring a Senior Data/AI Engineer? You can reach out to me!",
+    "Are you hiring a Senior Data/AI Engineer? Feel free to reach out to me!",
   // number: "+92-0000000000",
-  email_address: "diletta.calussi@gmail.com"
+  email_address: "dilettacal.dev@gmail.com"
 };
 
 // Twitter Section
