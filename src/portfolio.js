@@ -6,16 +6,18 @@ import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Custom skill icons (import SVGs as React components for color control)
-import {ReactComponent as PysparkIcon} from "./assets/images/apachespark.svg";
-import {ReactComponent as KubernetesIcon} from "./assets/images/kubernetes.svg";
-import {ReactComponent as DatabricksIcon} from "./assets/images/databricks.svg";
-import {ReactComponent as HuggingfaceIcon} from "./assets/images/huggingface.svg";
-import {ReactComponent as LangchainIcon} from "./assets/images/langchain.svg";
-import {ReactComponent as CrewaiIcon} from "./assets/images/crewai.svg";
-import {ReactComponent as GradioIcon} from "./assets/images/gradio.svg";
-import {ReactComponent as AnthropicIcon} from "./assets/images/anthropic.svg";
-import {ReactComponent as OpenaiIcon} from "./assets/images/openai.svg";
-import {ReactComponent as PostgreSQLIcon} from "./assets/images/postgresql.svg";
+import {ReactComponent as PysparkIcon} from "./assets/images/simpleicons/apachespark.svg";
+import {ReactComponent as KubernetesIcon} from "./assets/images/simpleicons/kubernetes.svg";
+import {ReactComponent as DatabricksIcon} from "./assets/images/simpleicons/databricks.svg";
+import {ReactComponent as HuggingfaceIcon} from "./assets/images/simpleicons/huggingface.svg";
+import {ReactComponent as LangchainIcon} from "./assets/images/simpleicons/langchain.svg";
+import {ReactComponent as CrewaiIcon} from "./assets/images/simpleicons/crewai.svg";
+import {ReactComponent as GradioIcon} from "./assets/images/simpleicons/gradio.svg";
+import {ReactComponent as AnthropicIcon} from "./assets/images/simpleicons/anthropic.svg";
+import {ReactComponent as OpenaiIcon} from "./assets/images/simpleicons/openai.svg";
+import {ReactComponent as PostgreSQLIcon} from "./assets/images/simpleicons/postgresql.svg";
+import {ReactComponent as GithubActionsIcon} from "./assets/images/simpleicons/githubactions.svg";
+import {ReactComponent as AzureIcon} from "./assets/images/svgrepo/azure-icon-svgrepo-com-grey.svg";
 
 // Splash Screen
 
@@ -119,6 +121,10 @@ https://fontawesome.com/icons?d=gallery */
       customIcon: PostgreSQLIcon
     },
     {
+      skillName: "azure",
+      customIcon: AzureIcon
+    },
+    {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
@@ -129,6 +135,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "github actions",
+      customIcon: GithubActionsIcon
     }
   ],
   display: true // Set false to hide this section, defaults to true
