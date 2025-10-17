@@ -51,9 +51,15 @@ const skillsSection = {
   title: "What I do",
   subTitle: "AI and Data Engineer",
   skills: [
-    emoji("⚡ Build large-scale data pipelines and perform advanced data exploration and analysis (Python, pyspark, SQL, pandas, numpy, scikit-learn)"),
-    emoji("⚡ Develop and deploy NLP and LLM-based applications (OpenAI/Anthropic and Open-Source Models, HuggingFace, LangChain, crewai, gradio)"),
-    emoji("⚡ Design scalable cloud architectures with Kubernetes, Docker or Databricks based. Cloud: Azure, AWS.")
+    emoji(
+      "⚡ Build large-scale data pipelines and perform advanced data exploration and analysis (Python, pyspark, SQL, pandas, numpy, scikit-learn)"
+    ),
+    emoji(
+      "⚡ Develop and deploy NLP and LLM-based applications (OpenAI/Anthropic and Open-Source Models, HuggingFace, LangChain, crewai, gradio)"
+    ),
+    emoji(
+      "⚡ Design scalable cloud architectures with Kubernetes, Docker or Databricks based. Cloud: Azure, AWS."
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -124,17 +130,19 @@ const educationInfo = {
     {
       schoolName: "University of Applied Sciences Berlin",
       logo: require("./assets/images/S11_HTW_Berlin_Logo_pos_GRUEN_RGB.jpg"),
-      subHeader: "Bachelor of Science in Applied Computer Science (Second Study)",
+      subHeader:
+        "Bachelor of Science in Applied Computer Science (Second Study)",
       duration: "October 2016 - September 2019",
       desc: "Bachelor of Science with focus on Data Science and AI",
       descBullets: [
-        "Bachelor Thesis: 'Neural Machine Translation: A comparison of selected architectures.'",
+        "Bachelor Thesis: 'Neural Machine Translation: A comparison of selected architectures.'"
       ]
     },
     {
       schoolName: "University of Pisa",
       logo: require("./assets/images/Unipi_logo.jpg"),
-      subHeader: "Master of Arts & Bachelor of Arts in Linguistics and Translation (First Study)",
+      subHeader:
+        "Master of Arts & Bachelor of Arts in Linguistics and Translation (First Study)",
       duration: "September 2006 - May 2013",
       desc: "First study, full cycle with focus on Linguistics, Languages (German, Russian and English) and Translation.",
       descBullets: null
@@ -242,7 +250,7 @@ const bigProjects = {
           name: "Read more",
           url: "https://cariad.technology/de/en/news/stories/enhancing-charging-experience.html"
         }
-        //  
+        //
       ]
     },
     {
@@ -357,7 +365,8 @@ const talkSection = {
     {
       title: "How AI pushed me forward (and not away)",
       subtitle: "Unicorns in Tech Summit 2025",
-      slides_url: "https://www.linkedin.com/posts/dilettacal_what-an-inspiring-day-at-the-unicorns-in-activity-7383546764525637632-jdBK",
+      slides_url:
+        "https://www.linkedin.com/posts/dilettacal_what-an-inspiring-day-at-the-unicorns-in-activity-7383546764525637632-jdBK",
       event_url: "https://www.unicornsintech.com/uits25/"
     }
   ],

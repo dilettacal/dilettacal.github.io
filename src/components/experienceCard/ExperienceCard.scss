@@ -87,7 +87,7 @@
 
 .experience-roundedimg {
   position: absolute;
-  object-fit: contain;  /* show full logo without cropping */
+  object-fit: contain; /* show full logo without cropping */
   left: 0;
   right: 0;
   top: 7rem;
@@ -95,8 +95,8 @@
   margin-right: auto;
   width: 8rem;
   height: 8rem;
-  padding: 0.5rem;      /* reduced padding for better space usage */
-  background-color: white;  /* background for transparency */
+  padding: 0.5rem; /* reduced padding for better space usage */
+  background-color: white; /* background for transparency */
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
 }
@@ -128,7 +128,7 @@
 
 .experience-text-details {
   padding: 1.5rem;
-  margin-top: 3rem;  /* increased space below logo */
+  margin-top: 3rem; /* increased space below logo */
 }
 
 /* Media Query */
@@ -190,25 +190,25 @@
 /* --- Flip/expand scaffold --- */
 .exp-card {
   position: relative;
-  perspective: 1200px;   /* enables 3D */
-  height: 100%;          /* fill grid cell */
+  perspective: 1200px; /* enables 3D */
+  height: 100%; /* fill grid cell */
   outline: none;
   cursor: pointer;
 }
 
 .exp-card.expanded {
-  position: fixed;       /* fixed positioning for modal */
-  top: 2rem;             /* fixed distance from top */
-  left: 50%;             /* center horizontally */
+  position: fixed; /* fixed positioning for modal */
+  top: 2rem; /* fixed distance from top */
+  left: 50%; /* center horizontally */
   transform: translateX(-50%); /* center the card */
-  z-index: 1000;         /* above backdrop */
-  width: 94%;            /* responsive width - increased */
-  max-width: 1400px;     /* much wider maximum width */
-  height: auto;          /* grow with content */
+  z-index: 1000; /* above backdrop */
+  width: 94%; /* responsive width - increased */
+  max-width: 1400px; /* much wider maximum width */
+  height: auto; /* grow with content */
   max-height: calc(100vh - 4rem); /* don't exceed viewport */
-  cursor: default;       /* no pointer cursor when expanded */
-  animation: modalSlideIn 0.4s cubic-bezier(.2,.65,.3,1);
-  display: block;        /* override flex from normal state */
+  cursor: default; /* no pointer cursor when expanded */
+  animation: modalSlideIn 0.4s cubic-bezier(0.2, 0.65, 0.3, 1);
+  display: block; /* override flex from normal state */
 }
 
 @keyframes modalSlideIn {
@@ -226,10 +226,10 @@
 .exp-card-inner {
   position: relative;
   width: 100%;
-  min-height: 360px;     /* minimum card content height */
+  min-height: 360px; /* minimum card content height */
   height: 100%;
   transform-style: preserve-3d;
-  transition: transform .6s cubic-bezier(.2,.65,.3,1);
+  transition: transform 0.6s cubic-bezier(0.2, 0.65, 0.3, 1);
 }
 .exp-card.expanded .exp-card-inner {
   transform: rotateY(180deg);
@@ -256,27 +256,27 @@
 /* Surface used on the back (wider, horizontal layout) */
 .expanded-surface {
   border-radius: 12px;
-  box-shadow: 0 24px 40px -12px rgba(0,0,0,.35);
+  box-shadow: 0 24px 40px -12px rgba(0, 0, 0, 0.35);
   padding: 2rem 2.5rem;
   box-sizing: border-box;
   max-height: calc(100vh - 4rem);
   overflow-y: auto;
   overflow-x: hidden;
-  
+
   /* Custom scrollbar for the whole card */
   &::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   &::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.05);
     border-radius: 4px;
   }
-  
+
   &::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    
+
     &:hover {
       background: rgba(0, 0, 0, 0.3);
     }
@@ -291,24 +291,24 @@
   align-items: center;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(0,0,0,.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 .expanded-logo {
-  width: 90px; 
-  height: 90px; 
-  padding: 8px;         /* reduced padding for better space usage */
-  background-color: white;  /* background for transparency */
+  width: 90px;
+  height: 90px;
+  padding: 8px; /* reduced padding for better space usage */
+  background-color: white; /* background for transparency */
   border-radius: 50%;
-  object-fit: contain;  /* show full logo without cropping */
-  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+  object-fit: contain; /* show full logo without cropping */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 .expanded-title h4 {
-  margin: 0 0 .4rem 0;
+  margin: 0 0 0.4rem 0;
   font-size: 1.6rem;
   font-weight: 700;
 }
 .expanded-meta {
-  opacity: .75;
+  opacity: 0.75;
   font-weight: 600;
   font-size: 1rem;
 }
@@ -333,11 +333,11 @@
   flex-wrap: wrap;
   gap: 0.5rem 1rem;
   list-style: none;
-  
+
   li {
     display: inline-flex;
     align-items: center;
-    
+
     &:before {
       content: "•";
       margin-right: 0.5rem;
@@ -350,21 +350,21 @@
   margin-top: 1.5rem;
   border: 2px solid transparent;
   border-radius: 8px;
-  padding: .65rem 1.25rem;
+  padding: 0.65rem 1.25rem;
   cursor: pointer;
   font-weight: 600;
   font-size: 0.95rem;
-  box-shadow: 0 6px 16px rgba(0,0,0,.2);
-  background: rgba(255,255,255,.85);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.85);
   transition: all 0.2s ease;
   align-self: flex-start;
-  
+
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,.3);
-    border-color: rgba(0,0,0,.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 0, 0, 0.1);
   }
-  
+
   &:active {
     transform: translateY(0);
   }
@@ -373,7 +373,7 @@
 .experience-card-dark .expanded-close {
   background: rgba(50, 50, 50, 0.9);
   color: white;
-  
+
   &:hover {
     background: rgba(70, 70, 70, 0.95);
   }
@@ -394,10 +394,10 @@
   &::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0.05);
   }
-  
+
   &::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.2);
-    
+
     &:hover {
       background: rgba(255, 255, 255, 0.3);
     }
@@ -412,40 +412,40 @@
     max-height: calc(100vh - 2rem);
     top: 1rem;
   }
-  
+
   .expanded-surface {
     padding: 1.5rem;
     max-height: calc(100vh - 2rem);
   }
-  
+
   .expanded-header {
     grid-template-columns: 70px 1fr;
     gap: 1rem;
   }
-  
+
   .expanded-logo {
     width: 70px;
     height: 70px;
     padding: 6px;
   }
-  
+
   .expanded-title h4 {
     font-size: 1.3rem;
   }
-  
-  .expanded-body { 
+
+  .expanded-body {
     gap: 1.25rem;
   }
-  
+
   .expanded-description {
     font-size: 1rem;
   }
-  
+
   .expanded-list {
     gap: 0.4rem 0.75rem;
     font-size: 0.95rem;
   }
-  
+
   .expanded-close {
     margin-top: 1.25rem;
     width: 100%;
@@ -459,12 +459,12 @@
     max-height: calc(100vh - 1rem);
     top: 0.5rem;
   }
-  
+
   .expanded-surface {
     padding: 1rem 1.5rem;
     max-height: calc(100vh - 1rem);
   }
-  
+
   .expanded-header {
     margin-bottom: 0.75rem;
     padding-bottom: 0.75rem;
