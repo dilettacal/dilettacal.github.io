@@ -5,6 +5,18 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
+// Custom skill icons (import SVGs as React components for color control)
+import {ReactComponent as PysparkIcon} from "./assets/images/apachespark.svg";
+import {ReactComponent as KubernetesIcon} from "./assets/images/kubernetes.svg";
+import {ReactComponent as DatabricksIcon} from "./assets/images/databricks.svg";
+import {ReactComponent as HuggingfaceIcon} from "./assets/images/huggingface.svg";
+import {ReactComponent as LangchainIcon} from "./assets/images/langchain.svg";
+import {ReactComponent as CrewaiIcon} from "./assets/images/crewai.svg";
+import {ReactComponent as GradioIcon} from "./assets/images/gradio.svg";
+import {ReactComponent as AnthropicIcon} from "./assets/images/anthropic.svg";
+import {ReactComponent as OpenaiIcon} from "./assets/images/openai.svg";
+import {ReactComponent as PostgreSQLIcon} from "./assets/images/postgresql.svg";
+
 // Splash Screen
 
 const splashScreen = {
@@ -67,52 +79,52 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "pyspark",
+      customIcon: PysparkIcon
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "databricks",
+      customIcon: DatabricksIcon
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "openai",
+      customIcon: OpenaiIcon
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "huggingface",
+      customIcon: HuggingfaceIcon
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "langchain",
+      customIcon: LangchainIcon
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "crewai",
+      customIcon: CrewaiIcon
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "gradio",
+      customIcon: GradioIcon
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "anthropic",
+      customIcon: AnthropicIcon
+    },
+    {
+      skillName: "postgresql",
+      customIcon: PostgreSQLIcon
     },
     {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "kubernetes",
+      customIcon: KubernetesIcon
     },
     {
       skillName: "docker",
@@ -134,9 +146,10 @@ const educationInfo = {
         "Bachelor of Science in Applied Computer Science (Second Study)",
       duration: "October 2016 - September 2019",
       desc: "Bachelor of Science with focus on Data Science and AI",
-      descBullets: [
-        "Bachelor Thesis: 'Neural Machine Translation: A comparison of selected architectures.'"
-      ]
+      // descBullets: [
+      //   "Bachelor Thesis: 'Neural Machine Translation: A comparison of selected architectures.'"
+      // ]
+      descBullets: null
     },
     {
       schoolName: "University of Pisa",
@@ -214,8 +227,8 @@ const workExperiences = {
       ]
     },
     {
-      role: "Early Career",
-      company: "Several Companies and Freelance",
+      role: "Several Roles",
+      company: "Early Career",
       companylogo: require("./assets/images/early_career.png"),
       date: "2012 -- 2018",
       desc: "Translator, Linguist and Software Engineer",

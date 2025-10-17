@@ -6,7 +6,7 @@
   font-size: 3rem;
   margin-bottom: 0px;
   margin-top: 0px;
-  text-align: center;
+  text-align: left; /* align icons to the left like the text */
 }
 
 .software-skill-inline {
@@ -27,5 +27,45 @@
   font-size: 10px;
 }
 .software-skill-inline > i:hover ~ p {
+  color: $skillsColor;
+}
+
+/* Custom icon support (for SVG/PNG images) */
+.custom-skill-icon {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  transition: all 0.2s ease;
+  /* No filters - show original colors */
+}
+
+.custom-skill-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Inline SVG icons */
+.custom-skill-icon-svg {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  transition: all 0.2s ease;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: $subTitle; /* Match Font Awesome icon color */
+  }
+}
+
+.custom-skill-icon-svg:hover {
+  transform: scale(1.1);
+
+  svg {
+    fill: $skillsColor; /* Match Font Awesome hover color */
+  }
+}
+
+.software-skill-inline:hover .custom-skill-icon ~ p,
+.software-skill-inline:hover .custom-skill-icon-svg ~ p {
   color: $skillsColor;
 }

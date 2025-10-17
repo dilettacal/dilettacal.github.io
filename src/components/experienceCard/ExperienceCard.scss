@@ -152,24 +152,55 @@
 
 @media (max-width: 768px) {
   .exp-card {
-    height: auto; /* override fixed height on mobile */
+    height: auto !important; /* override fixed height on mobile */
+    min-height: unset; /* remove minimum height */
   }
 
   .exp-card-inner {
-    height: 100%; /* fill parent */
+    height: auto; /* natural height on mobile */
+    min-height: unset; /* remove minimum height constraint */
+  }
+
+  .experience-card,
+  .experience-card-dark {
+    height: auto; /* natural height for card content */
+  }
+
+  .experience-banner {
+    height: 10rem; /* reduce banner height on mobile */
+  }
+
+  .experience-blurred_div {
+    height: 7rem;
+  }
+
+  .experience-div-company {
+    height: 5rem;
+  }
+
+  .experience-roundedimg {
+    top: 5rem; /* adjust logo position for shorter banner */
+    width: 6rem; /* smaller logo on mobile */
+    height: 6rem;
+    padding: 0.4rem; /* less padding on mobile */
+  }
+
+  .experience-text-details {
+    margin-top: 1.8rem; /* adjust text spacing to prevent overlap */
+    padding-top: 0.5rem;
   }
 
   .experience-text-role {
     font-size: 22px;
   }
   .experience-text-company {
-    font-size: 22px;
+    font-size: 20px;
   }
   .experience-text-date {
-    font-size: 18px;
+    font-size: 16px;
   }
   .experience-text-desc {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 

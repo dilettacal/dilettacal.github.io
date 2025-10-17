@@ -37,7 +37,8 @@
   }
 
   .experience-cards-div {
-    grid-auto-rows: auto; /* let cards use natural height on mobile */
-    gap: 1.5rem 1rem; /* increase vertical gap for better spacing */
+    display: flex !important; /* switch to flexbox on mobile */
+    flex-direction: column;
+    gap: 2.5rem; /* spacing between cards */
   }
 }
