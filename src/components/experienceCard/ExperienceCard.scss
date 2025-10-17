@@ -151,6 +151,14 @@
 }
 
 @media (max-width: 768px) {
+  .exp-card {
+    height: auto; /* override fixed height on mobile */
+  }
+
+  .exp-card-inner {
+    height: 100%; /* fill parent */
+  }
+
   .experience-text-role {
     font-size: 22px;
   }
