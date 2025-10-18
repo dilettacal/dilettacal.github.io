@@ -40,13 +40,21 @@
   height: 27px;
 }
 
+.education-card-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .education-roundedimg {
-  object-fit: cover;
+  object-fit: contain;
   margin-right: 2rem;
   width: 6rem;
   height: 6rem;
+  padding: 0.5rem;
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
+  background-color: white;
 }
 
 .education-card-right {
@@ -102,11 +110,15 @@
   .education-text-duration {
     font-size: 16px;
   }
+  .education-card-left {
+    margin-bottom: 0.5rem;
+  }
   .education-roundedimg {
     width: 4rem;
     height: 4rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     margin-right: 0px;
+    padding: 0.3rem;
   }
 }
 
@@ -120,12 +132,15 @@
   .education-card-border {
     width: 100%;
   }
-  .education-roundedimg {
+  .education-card-left {
     margin-top: 10px;
+    margin-bottom: 1rem;
+  }
+  .education-roundedimg {
     width: 4rem;
     height: 4rem;
-    margin-bottom: 1rem;
-    margin-right: 0;
+    margin: 0;
+    padding: 0.3rem;
   }
   .education-text-bullets > ul {
     max-width: 80%;
