@@ -18,7 +18,9 @@ import {ReactComponent as OpenaiIcon} from "./assets/images/simpleicons/openai.s
 import {ReactComponent as PostgreSQLIcon} from "./assets/images/simpleicons/postgresql.svg";
 import {ReactComponent as GithubActionsIcon} from "./assets/images/simpleicons/githubactions.svg";
 import {ReactComponent as AzureIcon} from "./assets/images/svgrepo/azure-icon-svgrepo-com-grey.svg";
-
+import {ReactComponent as PytorchIcon} from "./assets/images/simpleicons/pytorch.svg";
+import {ReactComponent as SpacyIcon} from "./assets/images/simpleicons/spacy.svg";
+import {ReactComponent as TerraformIcon} from "./assets/images/simpleicons/terraform.svg";
 // Achievement/Certification logos (import as regular images for <img> tags)
 import udemyLogo from "./assets/images/svgrepo/udemy-svgrepo-com.svg";
 import linkedinLogo from "./assets/images/svgrepo/linkedin-svgrepo-com.svg";
@@ -45,8 +47,7 @@ const greeting = {
   subTitle: emoji(
     "A passionate AI and Data Engineer with 8+ years of experience building scalable data pipelines and LLM-powered AI applications."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -58,7 +59,7 @@ const socialMediaLinks = {
   gmail: "dilettacal.dev@gmail.com",
   gitlab: "",
   facebook: "",
-  medium: "https://medium.com/@dilettacalussi",
+  medium: "https://medium.com/@diletta.calussi",
   stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -86,66 +87,33 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "pyspark",
-      customIcon: PysparkIcon
-    },
-    {
-      skillName: "databricks",
-      customIcon: DatabricksIcon
-    },
-    {
-      skillName: "openai",
-      customIcon: OpenaiIcon
-    },
-    {
-      skillName: "huggingface",
-      customIcon: HuggingfaceIcon
-    },
-    {
-      skillName: "langchain",
-      customIcon: LangchainIcon
-    },
-    {
-      skillName: "crewai",
-      customIcon: CrewaiIcon
-    },
-    {
-      skillName: "gradio",
-      customIcon: GradioIcon
-    },
-    {
-      skillName: "anthropic",
-      customIcon: AnthropicIcon
-    },
-    {
-      skillName: "postgresql",
-      customIcon: PostgreSQLIcon
-    },
-    {
-      skillName: "azure",
-      customIcon: AzureIcon
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "kubernetes",
-      customIcon: KubernetesIcon
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "github actions",
-      customIcon: GithubActionsIcon
-    }
+    // Core Language
+    {skillName: "python", fontAwesomeClassname: "fab fa-python"},
+
+    // Data Engineering
+    {skillName: "pyspark", customIcon: PysparkIcon},
+    {skillName: "databricks", customIcon: DatabricksIcon},
+    {skillName: "postgresql", customIcon: PostgreSQLIcon},
+
+    // AI & LLM Ecosystem
+    {skillName: "openai", customIcon: OpenaiIcon},
+    {skillName: "anthropic", customIcon: AnthropicIcon},
+    {skillName: "huggingface", customIcon: HuggingfaceIcon},
+    {skillName: "langchain", customIcon: LangchainIcon},
+    {skillName: "crewai", customIcon: CrewaiIcon},
+    {skillName: "pytorch", customIcon: PytorchIcon},
+    {skillName: "spacy", customIcon: SpacyIcon},
+    {skillName: "gradio", customIcon: GradioIcon},
+
+    // Cloud & Infrastructure
+    {skillName: "azure", customIcon: AzureIcon},
+    {skillName: "aws", fontAwesomeClassname: "fab fa-aws"},
+    {skillName: "kubernetes", customIcon: KubernetesIcon},
+    {skillName: "docker", fontAwesomeClassname: "fab fa-docker"},
+    {skillName: "terraform", customIcon: TerraformIcon},
+
+    // DevOps & CI/CD
+    {skillName: "github actions", customIcon: GithubActionsIcon}
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -158,7 +126,8 @@ const educationInfo = {
     {
       schoolName: "University of Applied Sciences Berlin",
       logo: require("./assets/images/S11_HTW_Berlin_Logo_pos_GRUEN_RGB.jpg"),
-      subHeader: "Bachelor of Science in Applied Computer Science (Second Study)",
+      subHeader:
+        "Bachelor of Science in Applied Computer Science (Second Study)",
       duration: "October 2016 - September 2019",
       desc: "Focus on Data Science and AI.",
       descBullets: null
@@ -166,8 +135,7 @@ const educationInfo = {
     {
       schoolName: "University of Pisa",
       logo: require("./assets/images/Unipi_logo.jpg"),
-      subHeader:
-        "Master of Arts Linguistics and Translation (First Study)",
+      subHeader: "Master of Arts Linguistics and Translation (First Study)",
       duration: "September 2006 - May 2013",
       desc: "Focus on Linguistics and Translation.",
       descBullets: null
@@ -175,8 +143,7 @@ const educationInfo = {
     {
       schoolName: "University of Pisa",
       logo: require("./assets/images/Unipi_logo.jpg"),
-      subHeader:
-        "Bachelor of Arts in Languages and Literature (First Study)",
+      subHeader: "Bachelor of Arts in Languages and Literature (First Study)",
       duration: "September 2006 - May 2013",
       desc: "Focus on Linguistics, Languages, Literature and Translation.",
       descBullets: null
@@ -336,7 +303,7 @@ const achievementSection = {
     {
       title: "Building Agentic AI Systems",
       subtitle:
-        "Certified in designing agentic AI systems that enable autonomous decision-making and adaptive learning in dynamic environments.",
+        "Designed Agentic AI systems that enable autonomous decision-making and adaptive learning in dynamic environments.",
       image: linkedinLogo,
       imageAlt: "Linkedin Logo",
       footerLink: [
@@ -354,7 +321,7 @@ const achievementSection = {
     {
       title: "Fundamentals of Software Architecture for Big Data",
       subtitle:
-        "Certified in building scalable data systems with robust engineering and big data processing expertise.",
+        "CScalable data systems with robust engineering and big data processing expertise.",
       image: courseraLogo,
       imageAlt: "Coursera Logo",
       footerLink: [
@@ -371,7 +338,7 @@ const achievementSection = {
     {
       title: "Natural Language Processing Nanodegree",
       subtitle:
-        "Skilled in NLP techniques including tokenization, tagging, sentiment analysis, embeddings, translation, and speech recognition.",
+        "NLP techniques e.g., tokenization, tagging, sentiment analysis, embeddings, translation, and speech recognition.",
       image: udacityLogo,
       imageAlt: "Udacity Logo",
       footerLink: [
