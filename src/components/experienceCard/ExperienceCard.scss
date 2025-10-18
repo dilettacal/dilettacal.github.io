@@ -7,6 +7,9 @@
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   transition: all 0.3s ease;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
 }
 
 .experience-card-dark {
@@ -16,6 +19,9 @@
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   transition: all 0.3s ease;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
 }
 
 .experience-card:hover {
@@ -90,14 +96,14 @@
   object-fit: contain; /* show full logo without cropping */
   left: 0;
   right: 0;
-  top: 7rem;
+  top: 6.5rem; /* better positioning */
   margin-left: auto;
   margin-right: auto;
-  width: 8rem;
-  height: 8rem;
-  padding: 0.5rem; /* reduced padding for better space usage */
+  width: 6.5rem; /* slightly larger for desktop */
+  height: 6.5rem; /* slightly larger for desktop */
+  padding: 0.4rem; /* balanced padding */
   background-color: white; /* background for transparency */
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  box-shadow: 0 0.4rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
 }
 
@@ -128,7 +134,7 @@
 
 .experience-text-details {
   padding: 1.5rem;
-  margin-top: 3rem; /* increased space below logo */
+  margin-top: 3.5rem; /* balanced spacing - not too much gap */
 }
 
 /* Media Query */
@@ -145,8 +151,8 @@
     font-size: 18px;
   }
   .experience-roundedimg {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 6rem;
+    height: 6rem;
   }
 }
 
@@ -230,7 +236,7 @@
 .exp-card {
   position: relative;
   perspective: 1200px; /* enables 3D */
-  height: 100%; /* fill grid cell */
+  height: 100%;
   outline: none;
   cursor: pointer;
 }
@@ -265,8 +271,7 @@
 .exp-card-inner {
   position: relative;
   width: 100%;
-  min-height: 360px; /* minimum card content height */
-  height: 100%;
+  height: 480px; /* updated to match card height */
   transform-style: preserve-3d;
   transition: transform 0.6s cubic-bezier(0.2, 0.65, 0.3, 1);
 }
