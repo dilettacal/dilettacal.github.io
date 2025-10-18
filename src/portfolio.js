@@ -158,8 +158,7 @@ const educationInfo = {
     {
       schoolName: "University of Applied Sciences Berlin",
       logo: require("./assets/images/S11_HTW_Berlin_Logo_pos_GRUEN_RGB.jpg"),
-      subHeader:
-        "B. Sc. in Applied Computer Science (Second Study)",
+      subHeader: "B. Sc. in Applied Computer Science (Second Study)",
       duration: "October 2016 - September 2019",
       desc: "Focus on Data Science and AI",
       // descBullets: [
@@ -374,7 +373,7 @@ const achievementSection = {
           url: "https://www.udacity.com/course/natural-language-processing-nanodegree--nd892"
         }
       ]
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };

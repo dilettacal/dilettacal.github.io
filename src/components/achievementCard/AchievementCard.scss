@@ -1,9 +1,11 @@
 @import "../../_globalColor";
 
 .card-image {
-  max-width: 100%;
+  max-width: 200px; /* limit maximum width */
+  max-height: 200px; /* limit maximum height */
+  width: auto;
   height: auto;
-  width: 250px;
+  object-fit: contain; /* fit logo within bounds */
 }
 .card-title {
   color: $titleColor;
@@ -38,11 +40,12 @@
 }
 .certificate-image-div {
   position: relative;
-  height: 250px;
+  height: 200px; /* reduced from 250px for better proportions */
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem; /* add padding so logos don't touch edges */
 }
 .achievement-cards-div {
   display: grid;
