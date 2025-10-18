@@ -14,6 +14,17 @@ export default function WorkExperience() {
           <div className="experience-container" id="workExperience">
             <div>
               <h1 className="experience-heading">Experiences</h1>
+              {workExperiences.subtitle && (
+                <p
+                  className={
+                    isDark
+                      ? "dark-mode subTitle experience-subtitle"
+                      : "subTitle experience-subtitle"
+                  }
+                >
+                  {workExperiences.subtitle}
+                </p>
+              )}
               <div className="experience-cards-div">
                 {workExperiences.experience.map((card, i) => {
                   return (

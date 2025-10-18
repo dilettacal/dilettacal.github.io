@@ -158,21 +158,27 @@ const educationInfo = {
     {
       schoolName: "University of Applied Sciences Berlin",
       logo: require("./assets/images/S11_HTW_Berlin_Logo_pos_GRUEN_RGB.jpg"),
-      subHeader: "B. Sc. in Applied Computer Science (Second Study)",
+      subHeader: "Bachelor of Science in Applied Computer Science (Second Study)",
       duration: "October 2016 - September 2019",
-      desc: "Focus on Data Science and AI",
-      // descBullets: [
-      //   "Bachelor Thesis: 'Neural Machine Translation: A comparison of selected architectures.'"
-      // ]
+      desc: "Focus on Data Science and AI.",
       descBullets: null
     },
     {
       schoolName: "University of Pisa",
       logo: require("./assets/images/Unipi_logo.jpg"),
       subHeader:
-        "Master of Arts & Bachelor of Arts in Linguistics and Translation (First Study)",
+        "Master of Arts Linguistics and Translation (First Study)",
       duration: "September 2006 - May 2013",
-      desc: "First study, full cycle with focus on Linguistics, Languages (German, Russian and English) and Translation.",
+      desc: "Focus on Linguistics and Translation.",
+      descBullets: null
+    },
+    {
+      schoolName: "University of Pisa",
+      logo: require("./assets/images/Unipi_logo.jpg"),
+      subHeader:
+        "Bachelor of Arts in Linguistics and Translation (First Study)",
+      duration: "September 2006 - May 2013",
+      desc: "Focus on Linguistics, Languages, Literature and Translation.",
       descBullets: null
     }
   ]
@@ -203,6 +209,7 @@ const techStack = {
 
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
+  subtitle: emoji("For more details, click on the card. ⬇️"),
   experience: [
     {
       role: "Independent Publisher",
@@ -267,7 +274,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects & Activities",
-  subtitle: "Technical contributions and beyond",
+  subtitle: emoji("🛠️ Technical contributions and beyond 🚀"),
   projects: [
     {
       image: require("./assets/images/car_ai.png"),

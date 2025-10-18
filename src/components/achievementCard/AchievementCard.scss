@@ -1,20 +1,20 @@
 @import "../../_globalColor";
 
-.card-image {
-  max-width: 200px; /* limit maximum width */
-  max-height: 200px; /* limit maximum height */
+.certificate-card .card-image {
+  max-width: 120px; /* limit maximum width */
+  max-height: 120px; /* limit maximum height */
   width: auto;
   height: auto;
   object-fit: contain; /* fit logo within bounds */
 }
-.card-title {
+.certificate-card .card-title {
   color: $titleColor;
   font-size: 1.375rem;
   line-height: 24px;
   font-weight: 700;
   margin: 15px 0 0 0;
 }
-.card-subtitle {
+.certificate-card .card-subtitle {
   color: $cardSubtitle;
   font-size: 1.063rem;
   line-height: 1.5rem;
@@ -40,7 +40,7 @@
 }
 .certificate-image-div {
   position: relative;
-  height: 200px; /* reduced from 250px for better proportions */
+  height: 150px; /* reduced for better proportions */
   overflow: hidden;
   display: flex;
   justify-content: center;

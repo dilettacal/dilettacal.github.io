@@ -9,6 +9,10 @@
   font-weight: 400;
 }
 
+.experience-subtitle {
+  margin-bottom: 2rem;
+}
+
 .experience-container {
   display: flex;
   width: 90%;
@@ -27,11 +31,19 @@
   .experience-heading {
     font-size: 40px;
   }
+  .experience-subtitle {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
   .experience-heading {
     font-size: 30px;
+    text-align: center;
+  }
+
+  .experience-subtitle {
+    font-size: 16px;
     text-align: center;
   }
 
