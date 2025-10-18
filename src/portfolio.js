@@ -176,7 +176,7 @@ const educationInfo = {
       schoolName: "University of Pisa",
       logo: require("./assets/images/Unipi_logo.jpg"),
       subHeader:
-        "Bachelor of Arts in Linguistics and Translation (First Study)",
+        "Bachelor of Arts in Languages and Literature (First Study)",
       duration: "September 2006 - May 2013",
       desc: "Focus on Linguistics, Languages, Literature and Translation.",
       descBullets: null
@@ -190,16 +190,20 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "AI Engineering",
+      Stack: "Data Engineering & Analytics",
       progressPercentage: "90%"
     },
     {
-      Stack: "Data Engineering",
-      progressPercentage: "70%"
+      Stack: "LLM Engineering, AI and NLP",
+      progressPercentage: "95%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Data Science and Machine Learning",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Cloud and DevOps",
+      progressPercentage: "75%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
