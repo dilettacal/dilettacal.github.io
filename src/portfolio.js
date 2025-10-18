@@ -19,6 +19,12 @@ import {ReactComponent as PostgreSQLIcon} from "./assets/images/simpleicons/post
 import {ReactComponent as GithubActionsIcon} from "./assets/images/simpleicons/githubactions.svg";
 import {ReactComponent as AzureIcon} from "./assets/images/svgrepo/azure-icon-svgrepo-com-grey.svg";
 
+// Achievement/Certification logos (import as regular images for <img> tags)
+import udemyLogo from "./assets/images/svgrepo/udemy-svgrepo-com.svg";
+import linkedinLogo from "./assets/images/svgrepo/linkedin-svgrepo-com.svg";
+import courseraLogo from "./assets/images/svgrepo/coursera-svgrepo-com.svg";
+import udacityLogo from "./assets/images/svgrepo/udacity-svgrepo-com.svg";
+
 // Splash Screen
 
 const splashScreen = {
@@ -153,9 +159,9 @@ const educationInfo = {
       schoolName: "University of Applied Sciences Berlin",
       logo: require("./assets/images/S11_HTW_Berlin_Logo_pos_GRUEN_RGB.jpg"),
       subHeader:
-        "Bachelor of Science in Applied Computer Science (Second Study)",
+        "B. Sc. in Applied Computer Science (Second Study)",
       duration: "October 2016 - September 2019",
-      desc: "Bachelor of Science with focus on Data Science and AI",
+      desc: "Focus on Data Science and AI",
       // descBullets: [
       //   "Bachelor Thesis: 'Neural Machine Translation: A comparison of selected architectures.'"
       // ]
@@ -301,55 +307,76 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "LLM Engineering: Master AI, Large Language Models & Agents",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Build and deploy 8 LLM apps, mastering Generative AI, RAG, LoRA and AI Agents.",
+      image: udemyLogo,
+      imageAlt: "Udemy Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://www.udemy.com/certificate/UC-805e7dc6-a4b9-4243-837e-ab5809e077c3/"
         },
         {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "Course Description",
+          url: "https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Building Agentic AI Systems",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Certified in designing agentic AI systems that enable autonomous decision-making and adaptive learning in dynamic environments.",
+      image: linkedinLogo,
+      imageAlt: "Linkedin Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Certification",
+          url: "https://www.linkedin.com/learning/certificates/c707857f8e5a09b5a822aa0348e3f4745ed7059344fb3b288d32ae2fba44908a"
+        },
+        {
+          name: "Course Description",
+          url: "https://www.linkedin.com/learning/building-agentic-ai-systems/building-the-future-of-agentic-ai-29650812"
         }
       ]
     },
-
+    // Fundamentals of Software Architecture for Big Data
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Fundamentals of Software Architecture for Big Data",
+      subtitle:
+        "Certified in building scalable data systems with robust engineering and big data processing expertise.",
+      image: courseraLogo,
+      imageAlt: "Coursera Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Certification",
+          url: "https://www.coursera.org/account/accomplishments/verify/WQLYPQ5L6YBV"
+        },
+        {
+          name: "Course Description",
+          url: "https://www.coursera.org/learn/software-architecture-for-big-data-fundamentals"
         }
       ]
-    }
+    },
+    {
+      title: "Natural Language Processing Nanodegree",
+      subtitle:
+        "Skilled in NLP techniques including tokenization, tagging, sentiment analysis, embeddings, translation, and speech recognition.",
+      image: udacityLogo,
+      imageAlt: "Udacity Logo",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://www.udacity.com/certificate/A7SD37GJ"
+        },
+        {
+          name: "Course Description",
+          url: "https://www.udacity.com/course/natural-language-processing-nanodegree--nd892"
+        }
+      ]
+    },
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
