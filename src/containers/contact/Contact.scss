@@ -17,6 +17,11 @@
   font-weight: 400;
 }
 
+/* Style the phone emoji to be greenish */
+.contact-title {
+  filter: hue-rotate(120deg) saturate(0.7) brightness(0.9);
+}
+
 .contact-detail,
 .contact-detail-email {
   margin-top: 20px;
@@ -50,6 +55,19 @@
   height: auto;
   margin-left: 1.5rem;
   margin-top: -4rem;
+}
+
+.contact-image-div {
+  max-width: 350px; /* Limit the container size */
+  margin: 0 auto; /* Center the animation */
+  display: flex;
+  align-items: flex-start; /* Align to top */
+  margin-top: -2rem; /* Move up slightly above the text */
+}
+
+.contact-image-div > div {
+  transform: scale(0.8); /* Scale down the Lottie animation */
+  transform-origin: center;
 }
 
 /* Media Query */
