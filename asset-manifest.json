@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.5afef0e5.css",
-    "main.js": "/static/js/main.8998d8e7.js",
+    "main.css": "/static/css/main.f6e2630a.css",
+    "main.js": "/static/js/main.970f39ca.js",
     "static/css/487.a0f4e55a.chunk.css": "/static/css/487.a0f4e55a.chunk.css",
     "static/js/487.ea84ee9e.chunk.js": "/static/js/487.ea84ee9e.chunk.js",
     "static/css/990.9d9655ef.chunk.css": "/static/css/990.9d9655ef.chunk.css",
-    "static/js/990.cd168cb8.chunk.js": "/static/js/990.cd168cb8.chunk.js",
+    "static/js/990.e3dee31d.chunk.js": "/static/js/990.e3dee31d.chunk.js",
     "static/media/car_ai.png": "/static/media/car_ai.16f9a00f7cb3510118c1.png",
     "static/media/early_career.png": "/static/media/early_career.cef610fc591ed9287e9b.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -27,6 +27,7 @@
     "static/media/langchain.svg": "/static/media/langchain.e71140c6167befa81aa8bc86dd91a83c.svg",
     "static/media/udacity-svgrepo-com.svg": "/static/media/udacity-svgrepo-com.85983d62d4c63fa223ff4d0c550339ca.svg",
     "index.html": "/index.html",
+    "static/media/spacy.svg": "/static/media/spacy.1ee9b704db6eeae658e83bee6313f193.svg",
     "static/media/apachespark.svg": "/static/media/apachespark.fc577409270384f2e28282ec22fd3674.svg",
     "static/media/githubactions.svg": "/static/media/githubactions.0d0ce3a70c91df9e3b44d3ae9802621e.svg",
     "static/media/azure-icon-svgrepo-com-grey.svg": "/static/media/azure-icon-svgrepo-com-grey.99351f6171dd9e74b8bb05f445d60f15.svg",
@@ -35,17 +36,19 @@
     "static/media/gradio.svg": "/static/media/gradio.1e1ed4fa8282209e091eeeb133abeb48.svg",
     "static/media/crewai.svg": "/static/media/crewai.de8eafdbdfde4e45e47c0e41ac2464ac.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.8eeb35d7edaa689a388c.svg",
+    "static/media/pytorch.svg": "/static/media/pytorch.e64d02bdfe5507b5c8ec2ea495753d36.svg",
     "static/media/databricks.svg": "/static/media/databricks.36c6ee4bd27582e8d57439de1fe6584c.svg",
     "static/media/anthropic.svg": "/static/media/anthropic.691ebfe1e905b7bf08c31c4b160571ab.svg",
-    "main.5afef0e5.css.map": "/static/css/main.5afef0e5.css.map",
-    "main.8998d8e7.js.map": "/static/js/main.8998d8e7.js.map",
+    "static/media/terraform.svg": "/static/media/terraform.a9200d5aa9ca98a69c5754dbbd3dc465.svg",
+    "main.f6e2630a.css.map": "/static/css/main.f6e2630a.css.map",
+    "main.970f39ca.js.map": "/static/js/main.970f39ca.js.map",
     "487.a0f4e55a.chunk.css.map": "/static/css/487.a0f4e55a.chunk.css.map",
     "487.ea84ee9e.chunk.js.map": "/static/js/487.ea84ee9e.chunk.js.map",
     "990.9d9655ef.chunk.css.map": "/static/css/990.9d9655ef.chunk.css.map",
-    "990.cd168cb8.chunk.js.map": "/static/js/990.cd168cb8.chunk.js.map"
+    "990.e3dee31d.chunk.js.map": "/static/js/990.e3dee31d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5afef0e5.css",
-    "static/js/main.8998d8e7.js"
+    "static/css/main.f6e2630a.css",
+    "static/js/main.970f39ca.js"
   ]
 }
