@@ -243,9 +243,9 @@
 
 .exp-card.expanded {
   position: fixed; /* fixed positioning for modal */
-  top: 2rem; /* fixed distance from top */
+  top: 2rem; /* small margin from top of viewport */
   left: 50%; /* center horizontally */
-  transform: translateX(-50%); /* center the card */
+  transform: translateX(-50%); /* center horizontally only */
   z-index: 1000; /* above backdrop */
   width: 94%; /* responsive width - increased */
   max-width: 1400px; /* much wider maximum width */
@@ -455,6 +455,8 @@
     max-width: none;
     max-height: calc(100vh - 2rem);
     top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .expanded-surface {
@@ -502,6 +504,8 @@
   .exp-card.expanded {
     max-height: calc(100vh - 1rem);
     top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .expanded-surface {

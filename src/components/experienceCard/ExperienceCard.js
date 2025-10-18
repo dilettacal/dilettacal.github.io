@@ -8,12 +8,9 @@ export default function ExperienceCard({cardInfo, isDark}) {
   const [flipped, setFlipped] = useState(false);
   const imgRef = createRef();
 
-  // Handle ESC key and body scroll lock
+  // Handle ESC key
   useEffect(() => {
     if (flipped) {
-      // Lock body scroll when modal is open
-      document.body.style.overflow = "hidden";
-
       // Handle ESC key
       const handleEsc = e => {
         if (e.key === "Escape") {
@@ -23,7 +20,6 @@ export default function ExperienceCard({cardInfo, isDark}) {
       document.addEventListener("keydown", handleEsc);
 
       return () => {
-        document.body.style.overflow = "unset";
         document.removeEventListener("keydown", handleEsc);
       };
     }
