@@ -18,7 +18,7 @@ export default function StackProgress() {
         <div className="skills-container">
           <div className="skills-bar">
             <h1 className="skills-heading">
-              My focus over the last {maxYears} Years
+              Technologies over the last {maxYears} years
             </h1>
             {techStack.subtitle && (
               <p className="skills-subtitle">{techStack.subtitle}</p>

@@ -86,17 +86,20 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "AI and Data Engineer",
+  title: "At a Glance",
+  subTitle: "",
   skills: [
     emoji(
-      "⚡ Build large-scale data pipelines and perform advanced data exploration and analysis (Python, pyspark, SQL, pandas, numpy, scikit-learn)"
+      "⚡ Design and operate large-scale data pipelines"
     ),
     emoji(
-      "⚡ Develop and deploy NLP and LLM-based applications (OpenAI/Anthropic and Open-Source Models, HuggingFace, LangChain, crewai, gradio)"
+      "⚡ Design and develop Generative AI solutions"
     ),
     emoji(
-      "⚡ Design scalable cloud architectures with Kubernetes, Docker or Databricks based. Cloud: Azure, AWS."
+      "⚡ Perform exploratory data analysis and data quality assessment"
+    ),
+    emoji(
+      "⚡ Design and operate scalable cloud architectures"
     )
   ],
 
@@ -104,32 +107,13 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    // Core Language
     {skillName: "python", fontAwesomeClassname: "fab fa-python"},
-
-    // Data Engineering
-    {skillName: "pyspark", customIcon: PysparkIcon},
-    {skillName: "databricks", customIcon: DatabricksIcon},
-    {skillName: "postgresql", customIcon: PostgreSQLIcon},
-
-    // AI & LLM Ecosystem
     {skillName: "openai", customIcon: OpenaiIcon},
-    // {skillName: "anthropic", customIcon: AnthropicIcon},
-    // {skillName: "huggingface", customIcon: HuggingfaceIcon},
-    // {skillName: "langchain", customIcon: LangchainIcon},
-    // {skillName: "crewai", customIcon: CrewaiIcon},
-    // {skillName: "pytorch", customIcon: PytorchIcon},
-    // {skillName: "spacy", customIcon: SpacyIcon},
-    // {skillName: "gradio", customIcon: GradioIcon},
-
-    // Cloud & Infrastructure
+    {skillName: "databricks", customIcon: DatabricksIcon},
+    {skillName: "databases", fontAwesomeClassname: "fas fa-database"},    
+    {skillName: "huggingface", customIcon: HuggingfaceIcon},
     {skillName: "azure", customIcon: AzureIcon},
-    {skillName: "aws", fontAwesomeClassname: "fab fa-aws"},
-    {skillName: "kubernetes", customIcon: KubernetesIcon},
-    {skillName: "docker", fontAwesomeClassname: "fab fa-docker"},
-    {skillName: "terraform", customIcon: TerraformIcon},
-
-    // DevOps & CI/CD
+    {skillName: "kubernetes", customIcon: KubernetesIcon},  
     {skillName: "github actions", customIcon: GithubActionsIcon}
   ],
   display: true // Set false to hide this section, defaults to true
@@ -220,7 +204,8 @@ const techStack = {
         {customIcon: CrewaiIcon, name: "CrewAI"},
         {customIcon: HuggingfaceIcon, name: "HuggingFace"},
         {customIcon: PytorchIcon, name: "PyTorch"},
-        {customIcon: JupyterIcon, name: "Jupyter"}
+        {customIcon: JupyterIcon, name: "Jupyter"},
+        {fontAwesomeClassname: "fa-brands fa-java", name: "Java"}
       ]
     },
     {

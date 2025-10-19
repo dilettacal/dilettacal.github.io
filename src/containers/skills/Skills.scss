@@ -27,6 +27,9 @@
 .subTitle {
   color: $subTitle;
 }
+.skills-text-subtitle {
+  text-align: left;
+}
 
 /* Media Query */
 @media (max-width: 1380px) {
@@ -54,7 +57,7 @@
   }
   .skills-text-subtitle {
     font-size: 16px;
-    text-align: center;
+    text-align: left;
   }
   .skills-image-div {
     /* display: none; */
