@@ -43,6 +43,14 @@
   gap: 1rem;
 }
 
+.skill-header-with-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
 .skill-name {
   margin: 0;
   font-weight: 500;
@@ -52,6 +60,67 @@
   overflow-wrap: break-word;
   line-height: 1.3;
   margin-bottom: 0.25rem;
+}
+
+/* Technology Icons Styles */
+.skill-tech-icons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.tech-icon-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: all 0.2s ease;
+  
+  /* Font Awesome icons */
+  i {
+    font-size: 1.5rem;
+    color: $subTitle;
+    transition: color 0.2s ease;
+  }
+  
+  &:hover i {
+    color: $skillsColor;
+  }
+}
+
+/* Custom SVG icons */
+.tech-icon-svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: $subTitle;
+    transition: fill 0.2s ease;
+  }
+}
+
+.tech-icon-inline:hover .tech-icon-svg svg {
+  fill: $skillsColor;
+}
+
+/* Custom image icons */
+.tech-icon-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  transition: all 0.2s ease;
+}
+
+.tech-icon-inline:hover .tech-icon-img {
+  transform: scale(1.1);
 }
 
 .skill-years {
@@ -160,6 +229,12 @@
     gap: 0.25rem;
   }
   
+  .skill-header-with-icons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
   .skill-name {
     font-size: 0.95em;
   }
@@ -167,6 +242,29 @@
   .skill-years {
     align-self: flex-end;
     font-size: 0.85em;
+  }
+  
+  .skill-tech-icons {
+    gap: 0.4rem;
+  }
+  
+  .tech-icon-inline {
+    width: 1.3rem;
+    height: 1.3rem;
+    
+    i {
+      font-size: 1.3rem;
+    }
+  }
+  
+  .tech-icon-svg {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  
+  .tech-icon-img {
+    width: 1.3rem;
+    height: 1.3rem;
   }
 }
 
@@ -178,6 +276,29 @@
   
   .skill-years {
     font-size: 0.8em;
+  }
+  
+  .skill-tech-icons {
+    gap: 0.3rem;
+  }
+  
+  .tech-icon-inline {
+    width: 1.2rem;
+    height: 1.2rem;
+    
+    i {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .tech-icon-svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  
+  .tech-icon-img {
+    width: 1.2rem;
+    height: 1.2rem;
   }
   
 .skills-heading {

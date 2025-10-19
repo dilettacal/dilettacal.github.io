@@ -47,7 +47,35 @@ export default function StackProgress() {
 
               return (
                 <div key={i} className="skill">
-                  <p className="skill-name">{exp.Stack}</p>
+                  <div className="skill-header-with-icons">
+                    <p className="skill-name">{exp.Stack}</p>
+                    {exp.icons && exp.icons.length > 0 && (
+                      <div className="skill-tech-icons">
+                        {exp.icons.map((icon, iconIndex) => {
+                          const IconComponent = icon.customIcon;
+                          return (
+                            <span key={iconIndex} className="tech-icon-inline">
+                              {icon.customIcon ? (
+                                typeof icon.customIcon === "string" ? (
+                                  <img
+                                    src={icon.customIcon}
+                                    alt="tech icon"
+                                    className="tech-icon-img"
+                                  />
+                                ) : (
+                                  <div className="tech-icon-svg">
+                                    <IconComponent />
+                                  </div>
+                                )
+                              ) : (
+                                <i className={icon.fontAwesomeClassname}></i>
+                              )}
+                            </span>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
                   <div 
                     className="meter"
                     onMouseEnter={handleMouseEnter}
