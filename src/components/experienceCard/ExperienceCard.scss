@@ -251,18 +251,31 @@
   display: block; /* override flex from normal state */
 }
 
-/* Desktop only: expand horizontally to use more space */
+/* Desktop only: expand as overlay */
 @media (min-width: 1024px) {
   .exp-card.expanded {
-    grid-column: span 2; /* span 2 columns in the grid */
-    max-width: 900px; /* reasonable max width for readability */
+    position: absolute; /* overlay on top */
+    width: 700px; /* fixed width for overlay */
+    max-width: calc(100vw - 4rem); /* don't exceed viewport */
+    z-index: 1001; /* above backdrop */
+  }
+
+  /* Expand to the right */
+  .exp-card.expanded.expand-right {
+    left: 0;
+    right: auto;
+  }
+
+  /* Expand to the left */
+  .exp-card.expanded.expand-left {
+    right: 0;
+    left: auto;
   }
 }
 
 @media (min-width: 1400px) {
   .exp-card.expanded {
-    grid-column: span 3; /* span all columns on larger screens */
-    max-width: 1200px;
+    width: 900px; /* wider on large screens */
   }
 }
 

@@ -46,7 +46,7 @@
   }
 
   /* Kill ALL card margins that might override gap */
-  .experience-cards-div > .exp-card { 
+  .experience-cards-div > .exp-card {
     margin: 0 !important;
     padding: 0 !important;
     margin-top: 0 !important;
@@ -54,12 +54,10 @@
   }
 
   /* Some templates add margin to non-last or first card — neutralize both */
-  .experience-cards-div > .exp-card:not(:last-child) { 
-    margin-bottom: -95px !important; 
+  .experience-cards-div > .exp-card:not(:last-child) {
+    margin-bottom: -95px !important;
   }
-  .experience-cards-div > .exp-card:first-child { 
-    margin-bottom: -110px !important; 
+  .experience-cards-div > .exp-card:first-child {
+    margin-bottom: -110px !important;
   }
 }
-
-

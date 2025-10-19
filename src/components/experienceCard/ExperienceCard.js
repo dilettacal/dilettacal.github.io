@@ -6,7 +6,9 @@ import ColorThief from "colorthief";
 export default function ExperienceCard({cardInfo, isDark}) {
   const [colorArrays, setColorArrays] = useState([]);
   const [flipped, setFlipped] = useState(false);
+  const [expandDirection, setExpandDirection] = useState("right");
   const imgRef = createRef();
+  const cardRef = createRef();
 
   // Handle ESC key
   useEffect(() => {
@@ -57,15 +59,41 @@ export default function ExperienceCard({cardInfo, isDark}) {
 
       {/* flip container */}
       <div
+        ref={cardRef}
         className={`exp-card ${isDark ? "exp-card-dark" : ""} ${
           flipped ? "expanded" : ""
-        }`}
+        } ${flipped ? `expand-${expandDirection}` : ""}`}
         role="button"
         tabIndex={0}
-        onClick={() => !flipped && setFlipped(true)}
-        onKeyDown={e =>
-          !flipped && (e.key === "Enter" || e.key === " ") && setFlipped(true)
-        }
+        onClick={() => {
+          if (!flipped) {
+            // On large screens, detect card position to determine expand direction
+            if (window.innerWidth >= 1024 && cardRef.current) {
+              const rect = cardRef.current.getBoundingClientRect();
+              const cardCenterX = rect.left + rect.width / 2;
+              const viewportCenterX = window.innerWidth / 2;
+
+              // If card is on left half, expand right. If on right half, expand left
+              setExpandDirection(
+                cardCenterX < viewportCenterX ? "right" : "left"
+              );
+            }
+            setFlipped(true);
+          }
+        }}
+        onKeyDown={e => {
+          if (!flipped && (e.key === "Enter" || e.key === " ")) {
+            if (window.innerWidth >= 1024 && cardRef.current) {
+              const rect = cardRef.current.getBoundingClientRect();
+              const cardCenterX = rect.left + rect.width / 2;
+              const viewportCenterX = window.innerWidth / 2;
+              setExpandDirection(
+                cardCenterX < viewportCenterX ? "right" : "left"
+              );
+            }
+            setFlipped(true);
+          }
+        }}
         aria-expanded={flipped}
         aria-label={`${cardInfo.role} at ${cardInfo.company}`}
       >
