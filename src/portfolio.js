@@ -21,6 +21,23 @@ import {ReactComponent as AzureIcon} from "./assets/images/svgrepo/azure-icon-sv
 import {ReactComponent as PytorchIcon} from "./assets/images/simpleicons/pytorch.svg";
 import {ReactComponent as SpacyIcon} from "./assets/images/simpleicons/spacy.svg";
 import {ReactComponent as TerraformIcon} from "./assets/images/simpleicons/terraform.svg";
+import {ReactComponent as NextdotjsIcon} from "./assets/images/simpleicons/nextdotjs.svg";
+import {ReactComponent as TailwindcssIcon} from "./assets/images/simpleicons/tailwindcss.svg";
+import {ReactComponent as StreamlitIcon} from "./assets/images/simpleicons/streamlit.svg";
+import {ReactComponent as RedisIcon} from "./assets/images/simpleicons/redis.svg";
+import {ReactComponent as ApachekafkaIcon} from "./assets/images/simpleicons/apachekafka.svg";
+import {ReactComponent as JupyterIcon} from "./assets/images/simpleicons/jupyter.svg";
+import {ReactComponent as MongodbIcon} from "./assets/images/simpleicons/mongodb.svg";
+import {ReactComponent as NewrelicIcon} from "./assets/images/simpleicons/newrelic.svg";
+import {ReactComponent as PytestIcon} from "./assets/images/simpleicons/pytest.svg";
+import {ReactComponent as NumpyIcon} from "./assets/images/simpleicons/numpy.svg";
+import {ReactComponent as PandasIcon} from "./assets/images/simpleicons/pandas.svg";
+import {ReactComponent as OllamaIcon} from "./assets/images/simpleicons/ollama.svg";
+
+// svg repo
+import {ReactComponent as CanvaIcon} from "./assets/images/svgrepo/canva-svgrepo-com.svg";
+import {ReactComponent as AdobeInDesignIcon} from "./assets/images/svgrepo/adobe-indesign-logo-svgrepo-com.svg";
+
 // Achievement/Certification logos (import as regular images for <img> tags)
 import udemyLogo from "./assets/images/svgrepo/udemy-svgrepo-com.svg";
 import linkedinLogo from "./assets/images/svgrepo/linkedin-svgrepo-com.svg";
@@ -161,56 +178,71 @@ const techStack = {
   maxYears: techStackMaxYears, // Configure the maximum years scale (change this to set your desired scale)
   experience: [
     {
-      Stack: "Data Engineering & Analytics",
+      Stack: "Data Engineering",
       periods: [
         {start: techStackMaxYears - 5, duration: 5} // last 5 years
       ],
       details:
-        "Built large-scale data pipelines processing millions of vehicle records. Migrated from Databricks to Kubernetes architecture, reducing costs by 70%. Improved charging station accuracy for 78,000+ stations using EV telemetry data.",
+        "I design and operate data systems that combine batch and streaming processing, primarily on Azure. Data ingestion is event-driven or push/pull-based, integrating structured, semi-structured, and unstructured sources into Python-based pipelines and microservice architectures. Transformations and aggregations are implemented according to use-case complexity, with storage spanning Redis, MongoDB, and PostgreSQL. Monitoring and validation are handled through New Relic and automated testing to maintain reliability, scalability, and consistency across environments.",
       icons: [
         {fontAwesomeClassname: "fab fa-python", name: "Python"},
         {customIcon: AzureIcon, name: "Azure"},
-        {customIcon: OpenaiIcon, name: "OpenAI SDK"},
+        {customIcon: PandasIcon, name: "Pandas"},
         {customIcon: PysparkIcon, name: "PySpark"},
         {customIcon: DatabricksIcon, name: "Databricks"},
-        {customIcon: PostgreSQLIcon, name: "PostgreSQL"}
+        {customIcon: PostgreSQLIcon, name: "PostgreSQL"},
+        {customIcon: RedisIcon, name: "Redis"},
+        {customIcon: ApachekafkaIcon, name: "Apache Kafka"},
+        {customIcon: MongodbIcon, name: "MongoDB"},
+        {customIcon: NewrelicIcon, name: "New Relic"},
+        {customIcon: PytestIcon, name: "Pytest"}
       ]
     },
     {
       Stack: "LLM Engineering & NLP/NLU",
       periods: [
-        { start: 0, duration: 2 },    // 2018-2020: NLP (2 years)
-        { start: 2, duration: 3 },    // 2020-2023: NLU (3 years) 
-        { start: 5, duration: 2 }     // 2023-2025: LLM Engineering (2 years)
+        { start: 0, duration: 2 },    // 2018-2020
+        { start: 2, duration: 3 },    // 2020-2023
+        { start: 5, duration: 2 }     // 2023-2025
       ],
       details:
-        "Developed GenAI solutions for survey prediction and feedback summarization. Built agent-based project management automation using OpenAI/Anthropic APIs, LangChain, and CrewAI frameworks.",
+        "I develop Generative AI solutions focused on prediction, summarization, and automation. My work includes agent-based systems for project management using CrewAI and LangChain, integrating open-source and SDK-based models such as OpenAI, Anthropic, and Ollama. \
+        In the automotive domain, I have built multilingual NLU models (German/English) for in-car assistants covering a wide range of infotainment and control functions, including but not limited to navigation and climate settings.\
+        My experience spans rule-based, grammar-driven, and neural approaches (PyTorch) for intent classification and entity extraction, as well as Neural Machine Translation using sequence-to-sequence architectures like attention-based LSTMs and Transformers.",
       icons: [
+        {fontAwesomeClassname: "fab fa-python", name: "Python"},
         {customIcon: OpenaiIcon, name: "OpenAI"},
         {customIcon: AnthropicIcon, name: "Anthropic"},
+        // ollama
+        {customIcon: OllamaIcon, name: "Ollama"},
+        {customIcon: SpacyIcon, name: "spaCy"},
         {customIcon: LangchainIcon, name: "LangChain"},
         {customIcon: CrewaiIcon, name: "CrewAI"},
-        {customIcon: HuggingfaceIcon, name: "HuggingFace"}
+        {customIcon: HuggingfaceIcon, name: "HuggingFace"},
+        {customIcon: PytorchIcon, name: "PyTorch"},
+        {customIcon: JupyterIcon, name: "Jupyter"}
       ]
     },
     {
       Stack: "Data Science and Analytics",
       periods: [
-        { start: 0, duration: 1 },    // 2018-2021: University Data Science (2016-2019, but shown as 2018-2021 in the 7-year timeline)
-        { start: 4, duration: 3 }     // 2022-2025: Professional Data Science (2022-now)
+        { start: 0, duration: 1 },    // 2018-2021
+        { start: 4, duration: 3 }     // 2022-2025
       ],
       details:
         "Conducted exploratory data analysis and ensured data integrity compliance. Developed hybrid NLU models for vehicle assistants, improving speech recognition accuracy with context-free grammars and ML methods.",
       icons: [
         {fontAwesomeClassname: "fab fa-python", name: "Python"},
         {customIcon: PytorchIcon, name: "PyTorch"},
-        {customIcon: SpacyIcon, name: "spaCy"}
+        {customIcon: JupyterIcon, name: "Jupyter"},
+        {customIcon: NumpyIcon, name: "NumPy"},
+        {customIcon: PandasIcon, name: "Pandas"}
       ]
     },
     {
       Stack: "Cloud and DevOps",
       periods: [
-        {start: 3, duration: 4}, // 2018-2022: Cloud and DevOps (4 years)
+        {start: 3, duration: 4}, // 2018-2022
       ],
       details:
         "Designed scalable cloud architectures on Azure and AWS. Implemented CI/CD pipelines with GitHub Actions, containerized applications with Docker, and orchestrated with Kubernetes. Infrastructure as Code with Terraform.",
@@ -226,17 +258,18 @@ const techStack = {
     {
       Stack: "Frontend & Design",
       periods: [
-        {start: 5, duration: techStackMaxYears-5}, // 2024-2025: Frontend Development (1 year)
+        {start: 5, duration: techStackMaxYears-5}, // 2024-2025
       ],
       details:
         "Developed frontend applications using React, Next.js, and Tailwind CSS. Built responsive and user-friendly interfaces for web applications.",
       icons: [
-        {fontAwesomeClassname: "fab fa-react", name: "React"},
-        {fontAwesomeClassname: "fab fa-nextjs", name: "Next.js"},
-        {fontAwesomeClassname: "fab fa-tailwindcss", name: "Tailwind CSS"},
-        {fontAwesomeClassname: "fab fa-canva", name: "Canva"},
-        {fontAwesomeClassname: "fab fa-adobe", name: "Adobe InDesign"},
+        {fontAwesomeClassname: "fab fa-react", name: "React"}, //fontAwesomeClassname: "fab fa-react"
+        {customIcon: NextdotjsIcon, name: "Next.js"},
+        {customIcon: TailwindcssIcon, name: "Tailwind CSS"},
+        {customIcon: CanvaIcon, name: "Canva"},
+        {customIcon: AdobeInDesignIcon, name: "Adobe InDesign"},
         {customIcon: GradioIcon, name: "Gradio"},
+        {customIcon: StreamlitIcon, name: "Streamlit"},
       ]
     }
   ],
