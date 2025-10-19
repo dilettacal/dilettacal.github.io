@@ -348,6 +348,57 @@
   }
 }
 
+// Tooltip styles - apply to all devices
+.skill-tooltip {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin-top: 0.5rem;
+}
+
+.tooltip-content {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 280px;
+}
+
+/* Desktop tooltip improvements */
+@media (min-width: 1025px) {
+  .tooltip-content {
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 1rem 1.5rem;
+    max-width: 600px;
+  }
+}
+
+.tooltip-arrow {
+  position: absolute;
+  top: -8px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid rgba(0, 0, 0, 0.9);
+}
+
+.meter {
+  transition: opacity 0.2s ease;
+}
+
+.meter:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 480px) {
   // Mobile: Icons below title, aligned left
   .skill-header-with-icons {
@@ -412,60 +463,10 @@
     margin-bottom: 1.5rem;
     text-align: left;
   }
+}
 
-  // Tooltip styles
-  .skill-tooltip {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    margin-top: 0.5rem;
-  }
-
-  .tooltip-content {
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-    padding: 0.75rem;
-    border-radius: 8px;
-    font-size: 0.85rem;
-    line-height: 1.2;
-    position: relative;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    max-width: 280px;
-  }
-
-  .tooltip-content p {
-    margin: 0;
-  }
-
-  /* Desktop only - compact tooltip text */
-  @media (min-width: 1025px) {
-    .tooltip-content {
-      font-size: 0.75rem;
-      line-height: 0.4;
-      padding: 0.4rem 0.6rem;
-      max-width: 200px;
-      white-space: pre-line;
-    }
-  }
-
-  .tooltip-arrow {
-    position: absolute;
-    top: -8px;
-    left: 20px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid rgba(0, 0, 0, 0.9);
-  }
-
-  .meter {
-    transition: opacity 0.2s ease;
-  }
-
-  .meter:hover {
-    opacity: 0.8;
-  }
+/* Apply to all screen sizes - paragraph styling for tooltips */
+.tooltip-content p {
+  margin: 0;
+  line-height: 1.4;
 }
