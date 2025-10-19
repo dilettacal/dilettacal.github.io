@@ -15,18 +15,22 @@
 
 .greeting-main {
   display: flex;
+  gap: 3rem;
+  align-items: center;
 }
 
 .subTitle {
   color: $subTitle !important;
 }
 
-.greeting-main {
-  display: flex;
+.greeting-text-div {
+  flex: 0 1 auto;
+  margin-bottom: 30px;
 }
 
-.greeting-main > * {
-  flex: 1;
+.greeting-image-div {
+  flex: 0 1 auto;
+  max-width: 500px;
   margin-bottom: 30px;
 }
 
@@ -53,6 +57,7 @@
 .greeting-text-p {
   font-size: 30px;
   line-height: 40px;
+  max-width: 840px;
 }
 
 .greeting-image-div > img {
@@ -111,6 +116,9 @@
   }
   .greeting-text-p {
     font-size: 20px;
+  }
+  .greeting-image-div {
+    max-width: 400px;
   }
 }
 
