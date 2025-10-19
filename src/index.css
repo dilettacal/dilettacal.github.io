@@ -26,6 +26,47 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Global image resizing for large screens */
+@media (min-width: 1920px) {
+  /* All images scale properly */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Image containers - limit size and center */
+  .greeting-image-div,
+  .skills-image-div,
+  .blog-image-div,
+  .experience-image-div,
+  .project-image-div {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Lottie animations scale properly */
+  .greeting-image-div > div,
+  .greeting-image-div > div > div,
+  .skills-image-div > div,
+  .skills-image-div > div > div {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Utility class for any image container */
+  .responsive-image-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .responsive-image-container img,
+  .responsive-image-container > div {
+    max-width: 100%;
+    height: auto;
+  }
+  
+}
 /* Media Query */
 @media (max-width: 1380px) {
   html,
