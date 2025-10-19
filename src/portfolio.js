@@ -160,26 +160,32 @@ const techStack = {
   experience: [
     {
       Stack: "Data Engineering & Analytics",
-      yearsInTimeframe: 5, // All 5 years of your timeframe
-      position: "all", // "all", "start", or "end"
+      periods: [
+        { start: 0, duration: 5 } // Years 0-5 (all 5 years)
+      ],
       details: "Built large-scale data pipelines processing millions of vehicle records. Migrated from Databricks to Kubernetes architecture, reducing costs by 70%. Improved charging station accuracy for 78,000+ stations using EV telemetry data."
     },
     {
       Stack: "LLM Engineering, AI and NLP",
-      yearsInTimeframe: 3, // 3 years out of 5
-      position: "end", // Last 3 years
+      periods: [
+        { start: 2, duration: 3 } // Years 2-5 (last 3 years)
+      ],
       details: "Developed GenAI solutions for survey prediction and feedback summarization. Built agent-based project management automation using OpenAI/Anthropic APIs, LangChain, and CrewAI frameworks."
     },
     {
       Stack: "Data Science and Machine Learning",
-      yearsInTimeframe: 4, // 4 years out of 5
-      position: "start", // First 4 years
+      periods: [
+        { start: 0, duration: 2 }, // Years 0-2 (first 2 years)
+        { start: 4, duration: 1 }  // Year 4 (recent year)
+      ],
       details: "Conducted exploratory data analysis and ensured data integrity compliance. Developed hybrid NLU models for vehicle assistants, improving speech recognition accuracy with context-free grammars and ML methods."
     },
     {
       Stack: "Cloud and DevOps",
-      yearsInTimeframe: 5, // All 5 years of your timeframe
-      position: "all", // All years
+      periods: [
+        { start: 0, duration: 3 }, // Years 0-3 (first 3 years)
+        { start: 4, duration: 1 }  // Year 4 (recent year)
+      ],
       details: "Designed scalable cloud architectures on Azure and AWS. Implemented CI/CD pipelines with GitHub Actions, containerized applications with Docker, and orchestrated with Kubernetes. Infrastructure as Code with Terraform."
     }
   ],

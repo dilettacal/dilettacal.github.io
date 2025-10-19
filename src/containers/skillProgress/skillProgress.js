@@ -22,32 +22,12 @@ export default function StackProgress() {
               <p className="skills-subtitle">{techStack.subtitle}</p>
             )}
             {techStack.experience.map((exp, i) => {
-              // Use yearsInTimeframe directly (should not exceed maxYears)
-              const yearsInTimeframe = Math.min(exp.yearsInTimeframe || exp.yearsOfExperience, maxYears);
-              // Calculate percentage based on configurable max years
-              const progressPercentage = (yearsInTimeframe / maxYears) * 100;
+              // Calculate total years across all periods
+              const totalYears = exp.periods ? 
+                exp.periods.reduce((sum, period) => sum + period.duration, 0) :
+                (exp.yearsInTimeframe || exp.yearsOfExperience || 0);
               
-              // Determine position based on position field
-              let progressStyle;
-              if (exp.position === "start") {
-                // Fill from the beginning (left side)
-                progressStyle = {
-                  width: `${progressPercentage}%`,
-                  marginLeft: '0'
-                };
-              } else if (exp.position === "end") {
-                // Fill from the end (right side)
-                progressStyle = {
-                  width: `${progressPercentage}%`,
-                  marginLeft: 'auto'
-                };
-              } else {
-                // Default: fill from the end (right side)
-                progressStyle = {
-                  width: `${progressPercentage}%`,
-                  marginLeft: 'auto'
-                };
-              }
+              const cappedTotalYears = Math.min(totalYears, maxYears);
               
               const handleMouseEnter = () => {
                 if (exp.details) {
@@ -75,7 +55,37 @@ export default function StackProgress() {
                     onClick={handleClick}
                     style={{ cursor: exp.details ? 'pointer' : 'default' }}
                   >
-                    <span style={progressStyle}></span>
+                    {/* Render multiple periods as separate segments */}
+                    {exp.periods ? exp.periods.map((period, periodIndex) => {
+                      const startPercentage = (period.start / maxYears) * 100;
+                      const durationPercentage = (period.duration / maxYears) * 100;
+                      
+                      return (
+                        <span
+                          key={periodIndex}
+                          className="progress-segment"
+                          style={{
+                            position: 'absolute',
+                            left: `${startPercentage}%`,
+                            width: `${durationPercentage}%`,
+                            height: '100%',
+                            borderRadius: '0'
+                          }}
+                        />
+                      );
+                    }) : (
+                      // Fallback for old format
+                      <span 
+                        style={{
+                          position: 'absolute',
+                          right: '0',
+                          width: `${(cappedTotalYears / maxYears) * 100}%`,
+                          height: '100%',
+                          borderRadius: '0'
+                        }}
+                      />
+                    )}
+                    
                     {/* Add vertical tick marks for years */}
                     {Array.from({ length: maxYears - 1 }, (_, tickIndex) => {
                       const tickPosition = ((tickIndex + 1) / maxYears) * 100;

@@ -16,6 +16,11 @@
   margin-left: auto; /* Push the progress to the right */
 }
 
+.progress-segment {
+  background-color: $progressBarSpanBG !important;
+  border-radius: 0;
+}
+
 .year-tick {
   position: absolute;
   top: 0;
@@ -26,7 +31,7 @@
 }
 .skill {
   line-height: 3.5vw;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
