@@ -27,6 +27,7 @@
 .skill {
   line-height: 3.5vw;
   margin-bottom: 1.5rem;
+  position: relative;
 }
 
 .skill-header {
@@ -187,5 +188,50 @@
   font-size: 1rem;
   margin-bottom: 1.5rem;
   text-align: left;
+}
+
+// Tooltip styles
+.skill-tooltip {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin-top: 0.5rem;
+}
+
+.tooltip-content {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+}
+
+.tooltip-content p {
+  margin: 0;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  top: -8px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid rgba(0, 0, 0, 0.9);
+}
+
+.meter {
+  transition: opacity 0.2s ease;
+}
+
+.meter:hover {
+  opacity: 0.8;
 }
 }

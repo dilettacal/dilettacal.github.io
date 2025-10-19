@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Progress.scss";
 import {illustration, techStack} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -7,6 +7,8 @@ import Build from "../../assets/lottie/coding";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StackProgress() {
+  const [activeTooltip, setActiveTooltip] = useState(null);
+
   if (techStack.viewSkillBars) {
     // Use the configurable maxYears from portfolio.js
     const maxYears = techStack.maxYears;
@@ -47,10 +49,32 @@ export default function StackProgress() {
                 };
               }
               
+              const handleMouseEnter = () => {
+                if (exp.details) {
+                  setActiveTooltip(i);
+                }
+              };
+
+              const handleMouseLeave = () => {
+                setActiveTooltip(null);
+              };
+
+              const handleClick = () => {
+                if (exp.details) {
+                  setActiveTooltip(activeTooltip === i ? null : i);
+                }
+              };
+
               return (
                 <div key={i} className="skill">
                   <p className="skill-name">{exp.Stack}</p>
-                  <div className="meter">
+                  <div 
+                    className="meter"
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    onClick={handleClick}
+                    style={{ cursor: exp.details ? 'pointer' : 'default' }}
+                  >
                     <span style={progressStyle}></span>
                     {/* Add vertical tick marks for years */}
                     {Array.from({ length: maxYears - 1 }, (_, tickIndex) => {
@@ -64,6 +88,15 @@ export default function StackProgress() {
                       );
                     })}
                   </div>
+                  {/* Tooltip */}
+                  {exp.details && activeTooltip === i && (
+                    <div className="skill-tooltip">
+                      <div className="tooltip-content">
+                        <p>{exp.details}</p>
+                        <div className="tooltip-arrow"></div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               );
             })}

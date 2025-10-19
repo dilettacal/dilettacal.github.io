@@ -161,22 +161,26 @@ const techStack = {
     {
       Stack: "Data Engineering & Analytics",
       yearsInTimeframe: 5, // All 5 years of your timeframe
-      position: "all" // "all", "start", or "end"
+      position: "all", // "all", "start", or "end"
+      details: "Built large-scale data pipelines processing millions of vehicle records. Migrated from Databricks to Kubernetes architecture, reducing costs by 70%. Improved charging station accuracy for 78,000+ stations using EV telemetry data."
     },
     {
       Stack: "LLM Engineering, AI and NLP",
       yearsInTimeframe: 3, // 3 years out of 5
-      position: "end" // Last 3 years
+      position: "end", // Last 3 years
+      details: "Developed GenAI solutions for survey prediction and feedback summarization. Built agent-based project management automation using OpenAI/Anthropic APIs, LangChain, and CrewAI frameworks."
     },
     {
       Stack: "Data Science and Machine Learning",
       yearsInTimeframe: 4, // 4 years out of 5
-      position: "start" // First 4 years
+      position: "start", // First 4 years
+      details: "Conducted exploratory data analysis and ensured data integrity compliance. Developed hybrid NLU models for vehicle assistants, improving speech recognition accuracy with context-free grammars and ML methods."
     },
     {
       Stack: "Cloud and DevOps",
       yearsInTimeframe: 5, // All 5 years of your timeframe
-      position: "all" // All years
+      position: "all", // All years
+      details: "Designed scalable cloud architectures on Azure and AWS. Implemented CI/CD pipelines with GitHub Actions, containerized applications with Docker, and orchestrated with Kubernetes. Infrastructure as Code with Terraform."
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
