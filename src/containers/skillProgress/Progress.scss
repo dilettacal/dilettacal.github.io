@@ -18,6 +18,7 @@
   background-color: $progressBarSpanBG;
   position: relative;
   overflow: hidden;
+  margin-left: auto; /* Push the progress to the right */
 }
 
 .year-tick {

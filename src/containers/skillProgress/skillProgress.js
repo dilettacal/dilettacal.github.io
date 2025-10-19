@@ -17,15 +17,32 @@ export default function StackProgress() {
           <div className="skills-bar">
             <h1 className="skills-heading">My focus over the last {maxYears} Years</h1>
             {techStack.experience.map((exp, i) => {
-              // Cap years of experience at maxYears to prevent bars > 100%
-              const cappedYears = Math.min(exp.yearsOfExperience, maxYears);
+              // Use yearsInTimeframe directly (should not exceed maxYears)
+              const yearsInTimeframe = Math.min(exp.yearsInTimeframe || exp.yearsOfExperience, maxYears);
               // Calculate percentage based on configurable max years
-              const progressPercentage = (cappedYears / maxYears) * 100;
-              const progressStyle = {
-                width: `${progressPercentage}%`
-              };
-              // Show actual years within the timeframe
-              const displayYears = exp.yearsOfExperience === 1 ? "1 year" : `${exp.yearsOfExperience} years`;
+              const progressPercentage = (yearsInTimeframe / maxYears) * 100;
+              
+              // Determine position based on position field
+              let progressStyle;
+              if (exp.position === "start") {
+                // Fill from the beginning (left side)
+                progressStyle = {
+                  width: `${progressPercentage}%`,
+                  marginLeft: '0'
+                };
+              } else if (exp.position === "end") {
+                // Fill from the end (right side)
+                progressStyle = {
+                  width: `${progressPercentage}%`,
+                  marginLeft: 'auto'
+                };
+              } else {
+                // Default: fill from the end (right side)
+                progressStyle = {
+                  width: `${progressPercentage}%`,
+                  marginLeft: 'auto'
+                };
+              }
               
               return (
                 <div key={i} className="skill">

@@ -159,19 +159,23 @@ const techStack = {
   experience: [
     {
       Stack: "Data Engineering & Analytics",
-      yearsOfExperience: 8
+      yearsInTimeframe: 5, // All 5 years of your timeframe
+      position: "all" // "all", "start", or "end"
     },
     {
       Stack: "LLM Engineering, AI and NLP",
-      yearsOfExperience: 7
+      yearsInTimeframe: 3, // 3 years out of 5
+      position: "end" // Last 3 years
     },
     {
       Stack: "Data Science and Machine Learning",
-      yearsOfExperience: 6
+      yearsInTimeframe: 4, // 4 years out of 5
+      position: "start" // First 4 years
     },
     {
       Stack: "Cloud and DevOps",
-      yearsOfExperience: 5
+      yearsInTimeframe: 5, // All 5 years of your timeframe
+      position: "all" // All years
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
