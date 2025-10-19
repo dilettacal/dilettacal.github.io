@@ -155,22 +155,23 @@ const educationInfo = {
 
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
+  maxYears: 5, // Configure the maximum years scale (change this to set your desired scale)
   experience: [
     {
       Stack: "Data Engineering & Analytics",
-      progressPercentage: "90%"
+      yearsOfExperience: 8
     },
     {
       Stack: "LLM Engineering, AI and NLP",
-      progressPercentage: "95%"
+      yearsOfExperience: 7
     },
     {
       Stack: "Data Science and Machine Learning",
-      progressPercentage: "80%"
+      yearsOfExperience: 6
     },
     {
       Stack: "Cloud and DevOps",
-      progressPercentage: "75%"
+      yearsOfExperience: 5
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
