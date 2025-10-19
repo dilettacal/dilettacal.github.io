@@ -173,7 +173,7 @@ const techStackMaxYears = 7;
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   subtitle: emoji(
-    "📊 What and where I have been focusing on the last years 🎯"
+    "📊 What and where I have been focusing on the last years 🎯  (For more details, click on the bars. ⬇️)"
   ),
   maxYears: techStackMaxYears, // Configure the maximum years scale (change this to set your desired scale)
   experience: [
@@ -182,8 +182,10 @@ const techStack = {
       periods: [
         {start: techStackMaxYears - 5, duration: 5} // last 5 years
       ],
-      details:
-        "I design and operate data systems that combine batch and streaming processing, primarily on Azure. Data ingestion is event-driven or push/pull-based, integrating structured, semi-structured, and unstructured sources into Python-based pipelines and microservice architectures. Transformations and aggregations are implemented according to use-case complexity, with storage spanning Redis, MongoDB, and PostgreSQL. Monitoring and validation are handled through New Relic and automated testing to maintain reliability, scalability, and consistency across environments.",
+      details: `I design and operate data systems that combine batch and streaming processing, primarily on Azure. 
+        Data ingestion is event-driven or push/pull-based, integrating structured, semi-structured, and unstructured sources into Python-based pipelines and microservice architectures. 
+        Transformations and aggregations are implemented according to use-case complexity, with storage spanning Redis, MongoDB, and PostgreSQL. 
+        Monitoring and validation are handled through New Relic and automated testing to maintain reliability, scalability, and consistency across environments.`,
       icons: [
         {fontAwesomeClassname: "fab fa-python", name: "Python"},
         {customIcon: AzureIcon, name: "Azure"},
@@ -201,19 +203,17 @@ const techStack = {
     {
       Stack: "LLM Engineering & NLP/NLU",
       periods: [
-        { start: 0, duration: 2 },    // 2018-2020
-        { start: 2, duration: 3 },    // 2020-2023
-        { start: 5, duration: 2 }     // 2023-2025
+        {start: 0, duration: 2}, // 2018-2020
+        {start: 2, duration: 3}, // 2020-2023
+        {start: 5, duration: 2} // 2023-2025
       ],
-      details:
-        "I develop Generative AI solutions focused on prediction, summarization, and automation. My work includes agent-based systems for project management using CrewAI and LangChain, integrating open-source and SDK-based models such as OpenAI, Anthropic, and Ollama. \
-        In the automotive domain, I have built multilingual NLU models (German/English) for in-car assistants covering a wide range of infotainment and control functions, including but not limited to navigation and climate settings.\
-        My experience spans rule-based, grammar-driven, and neural approaches (PyTorch) for intent classification and entity extraction, as well as Neural Machine Translation using sequence-to-sequence architectures like attention-based LSTMs and Transformers.",
+      details: `I develop Generative AI solutions focused on chatbots, prediction, summarization, and automation. My work includes agent-based systems for project management using CrewAI and LangChain, integrating open-source and SDK-based models such as OpenAI, Anthropic, and Ollama. 
+        In the automotive domain, I have built multilingual NLU models (German/English) for in-car assistants covering a wide range of infotainment and control functions, including but not limited to navigation and climate settings.
+        My experience spans rule-based, grammar-driven, and neural approaches (PyTorch) for intent classification and entity extraction, as well as Neural Machine Translation using sequence-to-sequence architectures like attention-based LSTMs and Transformers.`,
       icons: [
         {fontAwesomeClassname: "fab fa-python", name: "Python"},
         {customIcon: OpenaiIcon, name: "OpenAI"},
         {customIcon: AnthropicIcon, name: "Anthropic"},
-        // ollama
         {customIcon: OllamaIcon, name: "Ollama"},
         {customIcon: SpacyIcon, name: "spaCy"},
         {customIcon: LangchainIcon, name: "LangChain"},
@@ -226,11 +226,14 @@ const techStack = {
     {
       Stack: "Data Science and Analytics",
       periods: [
-        { start: 0, duration: 1 },    // 2018-2021
-        { start: 4, duration: 3 }     // 2022-2025
+        {start: 0, duration: 1}, // 2018-2021
+        {start: 4, duration: 3} // 2022-2025
       ],
       details:
-        "Conducted exploratory data analysis and ensured data integrity compliance. Developed hybrid NLU models for vehicle assistants, improving speech recognition accuracy with context-free grammars and ML methods.",
+        `I perform exploratory data analysis to assess data integrity, detect anomalies, and derive initial insights that inform downstream modeling and system design. 
+        My work combines descriptive statistics, visualization, and hypothesis-driven investigation to understand data behavior and edge cases before formal pipeline integration. 
+        Typical tasks include profiling large telemetry and geospatial datasets, verifying schema consistency, validating business metrics, and identifying data quality issues early in the development cycle. 
+        Analyses are carried out primarily in Python using pandas, NumPy, and visualization libraries to support both ad-hoc studies and structured reporting.`,
       icons: [
         {fontAwesomeClassname: "fab fa-python", name: "Python"},
         {customIcon: PytorchIcon, name: "PyTorch"},
@@ -242,10 +245,13 @@ const techStack = {
     {
       Stack: "Cloud and DevOps",
       periods: [
-        {start: 3, duration: 4}, // 2018-2022
+        {start: 3, duration: 4} // 2018-2022
       ],
       details:
-        "Designed scalable cloud architectures on Azure and AWS. Implemented CI/CD pipelines with GitHub Actions, containerized applications with Docker, and orchestrated with Kubernetes. Infrastructure as Code with Terraform.",
+        `I design, deploy, and maintain cloud-native systems on Azure and AWS, focusing on scalability, automation, and observability. 
+        Infrastructure is defined as code using Bicep and Terraform to ensure reproducible, version-controlled environments. 
+        Containerization with Docker and orchestration via Kubernetes enable modular, microservice-based architectures. 
+        CI/CD pipelines built with GitHub Actions automate build, test, and release processes, while continuous monitoring ensures high availability and operational stability across environments.`,
       icons: [
         {customIcon: KubernetesIcon, name: "Kubernetes"},
         {fontAwesomeClassname: "fab fa-docker", name: "Docker"},
@@ -258,10 +264,12 @@ const techStack = {
     {
       Stack: "Frontend & Design",
       periods: [
-        {start: 5, duration: techStackMaxYears-5}, // 2024-2025
+        {start: 5, duration: techStackMaxYears - 5} // 2024-2025
       ],
       details:
-        "Developed frontend applications using React, Next.js, and Tailwind CSS. Built responsive and user-friendly interfaces for web applications.",
+        `I create lightweight frontends and proof-of-concept interfaces to visualize data, test AI applications, and prototype ideas. 
+        For GenAI projects, I use frameworks like Gradio and Streamlit to build quick interactive demos and validation tools. React, Next.js, and Tailwind CSS support the development of responsive and maintainable UI components when needed. 
+        In my self-publishing work, Canva and Adobe InDesign are used for layout, design, and production of non-fiction titles, combining technical precision with visual clarity.`,
       icons: [
         {fontAwesomeClassname: "fab fa-react", name: "React"}, //fontAwesomeClassname: "fab fa-react"
         {customIcon: NextdotjsIcon, name: "Next.js"},
@@ -269,7 +277,7 @@ const techStack = {
         {customIcon: CanvaIcon, name: "Canva"},
         {customIcon: AdobeInDesignIcon, name: "Adobe InDesign"},
         {customIcon: GradioIcon, name: "Gradio"},
-        {customIcon: StreamlitIcon, name: "Streamlit"},
+        {customIcon: StreamlitIcon, name: "Streamlit"}
       ]
     }
   ],
