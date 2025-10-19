@@ -251,6 +251,21 @@
   display: block; /* override flex from normal state */
 }
 
+/* Desktop only: expand horizontally to use more space */
+@media (min-width: 1024px) {
+  .exp-card.expanded {
+    grid-column: span 2; /* span 2 columns in the grid */
+    max-width: 900px; /* reasonable max width for readability */
+  }
+}
+
+@media (min-width: 1400px) {
+  .exp-card.expanded {
+    grid-column: span 3; /* span all columns on larger screens */
+    max-width: 1200px;
+  }
+}
+
 @keyframes modalSlideIn {
   from {
     opacity: 0;
