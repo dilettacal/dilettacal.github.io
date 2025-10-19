@@ -60,6 +60,18 @@
   height: auto;
 }
 
+.greeting-image-div > div {
+  max-width: 100% !important;
+  height: auto !important;
+  overflow: hidden;
+}
+
+.greeting-image-div > div > div {
+  max-width: 100% !important;
+  height: auto !important;
+  transform-origin: center;
+}
+
 .wave-emoji {
   animation-duration: 1.8s;
   animation-iteration-count: infinite;
@@ -101,6 +113,25 @@
     font-size: 20px;
   }
 }
+
+/* Tablet devices */
+@media (max-width: 1024px) {
+  .greeting-image-div {
+    max-width: 300px !important;
+    height: auto !important;
+  }
+  .greeting-image-div > * {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+  }
+  .greeting-image-div > div > div {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+  }
+}
+
 @media (max-width: 768px) {
   .button-greeting-div {
     justify-content: center;
@@ -120,7 +151,9 @@
     display: block;
   }
   .greeting-image-div {
-    height: 256px;
+    max-width: 80% !important;
+    height: auto !important;
+    margin: 20px auto 0;
   }
 }
 
