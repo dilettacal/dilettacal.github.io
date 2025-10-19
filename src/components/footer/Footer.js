@@ -10,17 +10,18 @@ export default function Footer() {
     <Fade bottom duration={1000} distance="5px">
       <div className="footer-div">
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          {emoji("Made with ❤️ by DeveloperFolio Team")}
+          © 2025 Diletta Calussi
         </p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Theme by{" "}
+          Customized from Theme {" "}
           <a
             href="https://github.com/saadpasta/developerFolio"
             target="_blank"
             rel="noreferrer"
           >
-            developerFolio
+            developerFolio 
           </a>
+          , made with ❤️ by DeveloperFolio Team
         </p>
         <p
           className={
@@ -29,13 +30,17 @@ export default function Footer() {
               : "footer-text footer-credits"
           }
         >
-          Icons from{" "}
+          Icons and graphics from{" "}
           <a href="https://simpleicons.org/" target="_blank" rel="noreferrer">
             Simple Icons
           </a>
-          {" and "}
+          {", "}
           <a href="https://www.svgrepo.com/" target="_blank" rel="noreferrer">
             SVG Repo
+          </a>
+          {" and "}
+          <a href="https://lottiefiles.com/" target="_blank" rel="noreferrer">
+            Lottie
           </a>
         </p>
       </div>
