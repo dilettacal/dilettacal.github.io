@@ -16,6 +16,9 @@ export default function StackProgress() {
         <div className="skills-container">
           <div className="skills-bar">
             <h1 className="skills-heading">My focus over the last {maxYears} Years</h1>
+            {techStack.subtitle && (
+              <p className="skills-subtitle">{techStack.subtitle}</p>
+            )}
             {techStack.experience.map((exp, i) => {
               // Use yearsInTimeframe directly (should not exceed maxYears)
               const yearsInTimeframe = Math.min(exp.yearsInTimeframe || exp.yearsOfExperience, maxYears);

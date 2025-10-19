@@ -4,17 +4,12 @@
   height: 20px;
   position: relative;
   background: $progressBarBackground;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
+  border-radius: 0;
 }
 .meter > span {
   display: block;
   height: 100%;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 0;
   background-color: $progressBarSpanBG;
   position: relative;
   overflow: hidden;
@@ -87,7 +82,17 @@
   line-height: 1.2;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.skills-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  opacity: 0.8;
   margin-bottom: 2rem;
+  font-weight: 400;
+  text-align: left;
 }
 .skills-image > img {
   margin-left: 80px;
@@ -121,6 +126,12 @@
   
   .skills-heading {
     font-size: 2.2rem;
+    text-align: left;
+  }
+  
+  .skills-subtitle {
+    font-size: 1.1rem;
+    text-align: left;
   }
 }
 
@@ -168,6 +179,13 @@
   line-height: 1.2;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.skills-subtitle {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
 }
 }

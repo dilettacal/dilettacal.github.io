@@ -155,7 +155,8 @@ const educationInfo = {
 
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
-  maxYears: 5, // Configure the maximum years scale (change this to set your desired scale)
+  subtitle: emoji("📊 What and where I have been focusing on the last years 🎯"),
+  maxYears: 10, // Configure the maximum years scale (change this to set your desired scale)
   experience: [
     {
       Stack: "Data Engineering & Analytics",
