@@ -155,62 +155,68 @@ const educationInfo = {
 
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
-  subtitle: emoji("📊 What and where I have been focusing on the last years 🎯"),
+  subtitle: emoji(
+    "📊 What and where I have been focusing on the last years 🎯"
+  ),
   maxYears: 10, // Configure the maximum years scale (change this to set your desired scale)
   experience: [
     {
       Stack: "Data Engineering & Analytics",
       periods: [
-        { start: 0, duration: 5 } // Years 0-5 (all 5 years)
+        {start: 0, duration: 5} // Years 0-5 (all 5 years)
       ],
-      details: "Built large-scale data pipelines processing millions of vehicle records. Migrated from Databricks to Kubernetes architecture, reducing costs by 70%. Improved charging station accuracy for 78,000+ stations using EV telemetry data.",
+      details:
+        "Built large-scale data pipelines processing millions of vehicle records. Migrated from Databricks to Kubernetes architecture, reducing costs by 70%. Improved charging station accuracy for 78,000+ stations using EV telemetry data.",
       icons: [
-        {customIcon: PysparkIcon},
-        {customIcon: DatabricksIcon},
-        {customIcon: PostgreSQLIcon},
-        {fontAwesomeClassname: "fab fa-python"}
+        {customIcon: PysparkIcon, name: "PySpark"},
+        {customIcon: DatabricksIcon, name: "Databricks"},
+        {customIcon: PostgreSQLIcon, name: "PostgreSQL"},
+        {fontAwesomeClassname: "fab fa-python", name: "Python"}
       ]
     },
     {
       Stack: "LLM Engineering, AI and NLP",
       periods: [
-        { start: 2, duration: 3 } // Years 2-5 (last 3 years)
+        {start: 2, duration: 3} // Years 2-5 (last 3 years)
       ],
-      details: "Developed GenAI solutions for survey prediction and feedback summarization. Built agent-based project management automation using OpenAI/Anthropic APIs, LangChain, and CrewAI frameworks.",
+      details:
+        "Developed GenAI solutions for survey prediction and feedback summarization. Built agent-based project management automation using OpenAI/Anthropic APIs, LangChain, and CrewAI frameworks.",
       icons: [
-        {customIcon: OpenaiIcon},
-        {customIcon: AnthropicIcon},
-        {customIcon: LangchainIcon},
-        {customIcon: CrewaiIcon},
-        {customIcon: HuggingfaceIcon}
+        {customIcon: OpenaiIcon, name: "OpenAI"},
+        {customIcon: AnthropicIcon, name: "Anthropic"},
+        {customIcon: LangchainIcon, name: "LangChain"},
+        {customIcon: CrewaiIcon, name: "CrewAI"},
+        {customIcon: HuggingfaceIcon, name: "HuggingFace"}
       ]
     },
     {
       Stack: "Data Science and Machine Learning",
       periods: [
-        { start: 0, duration: 2 }, // Years 0-2 (first 2 years)
-        { start: 4, duration: 1 }  // Year 4 (recent year)
+        {start: 0, duration: 2}, // Years 0-2 (first 2 years)
+        {start: 4, duration: 1} // Year 4 (recent year)
       ],
-      details: "Conducted exploratory data analysis and ensured data integrity compliance. Developed hybrid NLU models for vehicle assistants, improving speech recognition accuracy with context-free grammars and ML methods.",
+      details:
+        "Conducted exploratory data analysis and ensured data integrity compliance. Developed hybrid NLU models for vehicle assistants, improving speech recognition accuracy with context-free grammars and ML methods.",
       icons: [
-        {fontAwesomeClassname: "fab fa-python"},
-        {customIcon: PytorchIcon},
-        {customIcon: SpacyIcon}
+        {fontAwesomeClassname: "fab fa-python", name: "Python"},
+        {customIcon: PytorchIcon, name: "PyTorch"},
+        {customIcon: SpacyIcon, name: "spaCy"}
       ]
     },
     {
       Stack: "Cloud and DevOps",
       periods: [
-        { start: 0, duration: 3 }, // Years 0-3 (first 3 years)
-        { start: 4, duration: 1 }  // Year 4 (recent year)
+        {start: 0, duration: 3}, // Years 0-3 (first 3 years)
+        {start: 4, duration: 1} // Year 4 (recent year)
       ],
-      details: "Designed scalable cloud architectures on Azure and AWS. Implemented CI/CD pipelines with GitHub Actions, containerized applications with Docker, and orchestrated with Kubernetes. Infrastructure as Code with Terraform.",
+      details:
+        "Designed scalable cloud architectures on Azure and AWS. Implemented CI/CD pipelines with GitHub Actions, containerized applications with Docker, and orchestrated with Kubernetes. Infrastructure as Code with Terraform.",
       icons: [
-        {customIcon: KubernetesIcon},
-        {fontAwesomeClassname: "fab fa-docker"},
-        {customIcon: AzureIcon},
-        {fontAwesomeClassname: "fab fa-aws"},
-        {customIcon: TerraformIcon}
+        {customIcon: KubernetesIcon, name: "Kubernetes"},
+        {fontAwesomeClassname: "fab fa-docker", name: "Docker"},
+        {customIcon: AzureIcon, name: "Azure"},
+        {fontAwesomeClassname: "fab fa-aws", name: "AWS"},
+        {customIcon: TerraformIcon, name: "Terraform"}
       ]
     }
   ],
