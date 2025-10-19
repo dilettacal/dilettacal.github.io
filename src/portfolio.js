@@ -97,13 +97,13 @@ https://fontawesome.com/icons?d=gallery */
 
     // AI & LLM Ecosystem
     {skillName: "openai", customIcon: OpenaiIcon},
-    {skillName: "anthropic", customIcon: AnthropicIcon},
-    {skillName: "huggingface", customIcon: HuggingfaceIcon},
-    {skillName: "langchain", customIcon: LangchainIcon},
-    {skillName: "crewai", customIcon: CrewaiIcon},
-    {skillName: "pytorch", customIcon: PytorchIcon},
-    {skillName: "spacy", customIcon: SpacyIcon},
-    {skillName: "gradio", customIcon: GradioIcon},
+    // {skillName: "anthropic", customIcon: AnthropicIcon},
+    // {skillName: "huggingface", customIcon: HuggingfaceIcon},
+    // {skillName: "langchain", customIcon: LangchainIcon},
+    // {skillName: "crewai", customIcon: CrewaiIcon},
+    // {skillName: "pytorch", customIcon: PytorchIcon},
+    // {skillName: "spacy", customIcon: SpacyIcon},
+    // {skillName: "gradio", customIcon: GradioIcon},
 
     // Cloud & Infrastructure
     {skillName: "azure", customIcon: AzureIcon},
@@ -152,32 +152,36 @@ const educationInfo = {
 };
 
 // Your top 3 proficient stacks/tech experience
-
+const techStackMaxYears = 7;
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   subtitle: emoji(
     "📊 What and where I have been focusing on the last years 🎯"
   ),
-  maxYears: 10, // Configure the maximum years scale (change this to set your desired scale)
+  maxYears: techStackMaxYears, // Configure the maximum years scale (change this to set your desired scale)
   experience: [
     {
       Stack: "Data Engineering & Analytics",
       periods: [
-        {start: 0, duration: 5} // Years 0-5 (all 5 years)
+        {start: techStackMaxYears - 5, duration: 5} // last 5 years
       ],
       details:
         "Built large-scale data pipelines processing millions of vehicle records. Migrated from Databricks to Kubernetes architecture, reducing costs by 70%. Improved charging station accuracy for 78,000+ stations using EV telemetry data.",
       icons: [
+        {fontAwesomeClassname: "fab fa-python", name: "Python"},
+        {customIcon: AzureIcon, name: "Azure"},
+        {customIcon: OpenaiIcon, name: "OpenAI SDK"},
         {customIcon: PysparkIcon, name: "PySpark"},
         {customIcon: DatabricksIcon, name: "Databricks"},
-        {customIcon: PostgreSQLIcon, name: "PostgreSQL"},
-        {fontAwesomeClassname: "fab fa-python", name: "Python"}
+        {customIcon: PostgreSQLIcon, name: "PostgreSQL"}
       ]
     },
     {
-      Stack: "LLM Engineering, AI and NLP",
+      Stack: "LLM Engineering & NLP/NLU",
       periods: [
-        {start: 2, duration: 3} // Years 2-5 (last 3 years)
+        { start: 0, duration: 2 },    // 2018-2020: NLP (2 years)
+        { start: 2, duration: 3 },    // 2020-2023: NLU (3 years) 
+        { start: 5, duration: 2 }     // 2023-2025: LLM Engineering (2 years)
       ],
       details:
         "Developed GenAI solutions for survey prediction and feedback summarization. Built agent-based project management automation using OpenAI/Anthropic APIs, LangChain, and CrewAI frameworks.",
@@ -190,10 +194,10 @@ const techStack = {
       ]
     },
     {
-      Stack: "Data Science and Machine Learning",
+      Stack: "Data Science and Analytics",
       periods: [
-        {start: 0, duration: 2}, // Years 0-2 (first 2 years)
-        {start: 4, duration: 1} // Year 4 (recent year)
+        { start: 0, duration: 1 },    // 2018-2021: University Data Science (2016-2019, but shown as 2018-2021 in the 7-year timeline)
+        { start: 4, duration: 3 }     // 2022-2025: Professional Data Science (2022-now)
       ],
       details:
         "Conducted exploratory data analysis and ensured data integrity compliance. Developed hybrid NLU models for vehicle assistants, improving speech recognition accuracy with context-free grammars and ML methods.",
@@ -206,8 +210,7 @@ const techStack = {
     {
       Stack: "Cloud and DevOps",
       periods: [
-        {start: 0, duration: 3}, // Years 0-3 (first 3 years)
-        {start: 4, duration: 1} // Year 4 (recent year)
+        {start: 3, duration: 4}, // 2018-2022: Cloud and DevOps (4 years)
       ],
       details:
         "Designed scalable cloud architectures on Azure and AWS. Implemented CI/CD pipelines with GitHub Actions, containerized applications with Docker, and orchestrated with Kubernetes. Infrastructure as Code with Terraform.",
@@ -216,7 +219,24 @@ const techStack = {
         {fontAwesomeClassname: "fab fa-docker", name: "Docker"},
         {customIcon: AzureIcon, name: "Azure"},
         {fontAwesomeClassname: "fab fa-aws", name: "AWS"},
-        {customIcon: TerraformIcon, name: "Terraform"}
+        {customIcon: TerraformIcon, name: "Terraform"},
+        {customIcon: GithubActionsIcon, name: "GitHub Actions"}
+      ]
+    },
+    {
+      Stack: "Frontend & Design",
+      periods: [
+        {start: 5, duration: techStackMaxYears-5}, // 2024-2025: Frontend Development (1 year)
+      ],
+      details:
+        "Developed frontend applications using React, Next.js, and Tailwind CSS. Built responsive and user-friendly interfaces for web applications.",
+      icons: [
+        {fontAwesomeClassname: "fab fa-react", name: "React"},
+        {fontAwesomeClassname: "fab fa-nextjs", name: "Next.js"},
+        {fontAwesomeClassname: "fab fa-tailwindcss", name: "Tailwind CSS"},
+        {fontAwesomeClassname: "fab fa-canva", name: "Canva"},
+        {fontAwesomeClassname: "fab fa-adobe", name: "Adobe InDesign"},
+        {customIcon: GradioIcon, name: "Gradio"},
       ]
     }
   ],
