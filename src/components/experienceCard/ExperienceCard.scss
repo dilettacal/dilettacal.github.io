@@ -242,15 +242,10 @@
 }
 
 .exp-card.expanded {
-  position: fixed; /* fixed positioning for modal */
-  top: 2rem; /* small margin from top of viewport */
-  left: 50%; /* center horizontally */
-  transform: translateX(-50%); /* center horizontally only */
+  position: relative; /* expand in place, not fixed */
   z-index: 1000; /* above backdrop */
-  width: 94%; /* responsive width - increased */
-  max-width: 1400px; /* much wider maximum width */
+  width: 100%; /* full width of grid cell */
   height: auto; /* grow with content */
-  max-height: calc(100vh - 4rem); /* don't exceed viewport */
   cursor: default; /* no pointer cursor when expanded */
   animation: modalSlideIn 0.4s cubic-bezier(0.2, 0.65, 0.3, 1);
   display: block; /* override flex from normal state */
@@ -259,11 +254,11 @@
 @keyframes modalSlideIn {
   from {
     opacity: 0;
-    transform: translateX(-50%) translateY(-20px) scale(0.95);
+    transform: scale(0.95);
   }
   to {
     opacity: 1;
-    transform: translateX(-50%) translateY(0) scale(1);
+    transform: scale(1);
   }
 }
 
@@ -303,7 +298,6 @@
   box-shadow: 0 24px 40px -12px rgba(0, 0, 0, 0.35);
   padding: 2rem 2.5rem;
   box-sizing: border-box;
-  max-height: calc(100vh - 4rem);
   overflow-y: auto;
   overflow-x: hidden;
 
@@ -450,18 +444,8 @@
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-  .exp-card.expanded {
-    width: 96%;
-    max-width: none;
-    max-height: calc(100vh - 2rem);
-    top: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   .expanded-surface {
     padding: 1.5rem;
-    max-height: calc(100vh - 2rem);
   }
 
   .expanded-header {
@@ -501,27 +485,12 @@
 
 /* Landscape mobile / small tablets */
 @media (max-width: 768px) and (orientation: landscape) {
-  .exp-card.expanded {
-    max-height: calc(100vh - 1rem);
-    top: 0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   .expanded-surface {
     padding: 1rem 1.5rem;
-    max-height: calc(100vh - 1rem);
   }
 
   .expanded-header {
     margin-bottom: 0.75rem;
     padding-bottom: 0.75rem;
-  }
-}
-
-/* Large screens - extra wide */
-@media (min-width: 1600px) {
-  .exp-card.expanded {
-    max-width: 1600px;
   }
 }
