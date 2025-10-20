@@ -355,7 +355,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // set to true to show this section, defaults to false
 };
 
 // Achievement Section
