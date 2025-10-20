@@ -191,19 +191,22 @@
 }
 .skills-container {
   display: flex;
-  width: 95%;
+  width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
 }
-.skills-container > * {
+.skills-bar {
   flex: 1;
+  min-width: 0; /* Allow the skills bar to shrink if needed */
   margin-bottom: 30px;
 }
 
-.skills-bar {
-  min-width: 0; /* Allow the skills bar to shrink if needed */
-  padding-right: 2rem; /* Add some padding for breathing room */
+.skills-image {
+  flex: 0 0 auto;
+  max-width: 400px;
+  margin-bottom: 30px;
+  margin-left: 2rem; /* Add spacing between content and image */
 }
 
 .skills-heading {
@@ -224,8 +227,7 @@
   text-align: left;
 }
 .skills-image > img {
-  margin-left: 80px;
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -257,6 +259,15 @@
 }
 
 @media (max-width: 1024px) {
+  .skills-container {
+    width: 90%; /* Slightly wider on tablet for better space usage */
+  }
+  
+  .skills-image {
+    max-width: 300px; /* Smaller image on tablets */
+    margin-left: 1rem; /* Less spacing on tablets */
+  }
+
   .skill-header {
     flex-direction: column;
     align-items: flex-start;
@@ -282,10 +293,12 @@
 @media (max-width: 768px) {
   .skills-container {
     flex-direction: column;
+    width: 95%; /* Slightly wider on mobile for better use of space */
   }
   .skills-bar {
     line-height: 3rem;
     margin: 20px;
+    margin-left: 0; /* Remove desktop flex spacing on mobile */
   }
   .skills-image {
     display: none;
