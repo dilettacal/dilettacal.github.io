@@ -62,7 +62,7 @@ const greeting = {
   username: "dilettacal",
   title: "Hi all, I'm Diletta",
   subTitle: emoji(
-    "A passionate AI and Data Engineer with 8+ years of experience building scalable data pipelines and LLM-powered AI applications."
+    "A passionate AI and Data Engineer with 8+ years of experience spanning data engineering, NLP, and AI."
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -76,7 +76,7 @@ const socialMediaLinks = {
   gmail: "dilettacal.dev@gmail.com",
   gitlab: "",
   facebook: "",
-  medium: "https://medium.com/@diletta.calussi",
+  medium: "",
   stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -90,7 +90,7 @@ const skillsSection = {
   subTitle: "",
   skills: [
     emoji(
-      "⚡ Design and operate large-scale data pipelines"
+      "⚡ Design and operate batch and streaming data pipelines"
     ),
     emoji(
       "⚡ Design and develop Generative AI solutions"
@@ -100,7 +100,7 @@ const skillsSection = {
     ),
     emoji(
       "⚡ Design and operate scalable cloud architectures"
-    )
+    ),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
