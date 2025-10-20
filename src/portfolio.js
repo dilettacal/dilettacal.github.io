@@ -216,7 +216,7 @@ const techStack = {
         {customIcon: JupyterIcon, name: "Jupyter"},
         {customIcon: NumpyIcon, name: "NumPy"},
         {customIcon: PandasIcon, name: "Pandas"},
-        {customIcon: DatabricksIcon, name: "Databricks"},
+        {customIcon: DatabricksIcon, name: "Databricks"}
       ]
     },
     {
@@ -364,13 +364,13 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Because growing up doesn’t mean stopping learning new cool stuff!",
+  subtitle: "Because growing up doesn’t mean stopping learning new cool stuff!",
 
   achievementsCards: [
     {
       title: "AI in Production: GenAI and Agentic AI at Scale",
-      subtitle: "Deploy AI to AWS, GCP, Azure, Vercel with MLOps, Bedrock, SageMaker, RAG, Agents, MCP: scalable, secure and observable.",
+      subtitle:
+        "Deploy AI to AWS, GCP, Azure, Vercel with MLOps, Bedrock, SageMaker, RAG, Agents, MCP: scalable, secure and observable.",
       image: udemyLogo,
       imageAlt: "Udemy Logo",
       inProgress: true,

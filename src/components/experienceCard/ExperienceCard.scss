@@ -163,11 +163,11 @@
     margin-bottom: -110px !important; /* Control spacing between cards on mobile */
     margin-top: 0 !important; /* Ensure no top margin interferes */
   }
-  
+
   .exp-card:first-child {
     margin-top: 0 !important; /* Explicitly ensure first card has no top margin */
   }
-  
+
   .exp-card:last-child {
     margin-bottom: 0 !important; /* Remove margin from last card */
   }

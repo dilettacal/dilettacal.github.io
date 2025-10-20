@@ -39,10 +39,10 @@ export default function ExperienceCard({cardInfo, isDark}) {
       ? descBullets.map((item, i) => {
           // Check if the item starts with an emoji (comprehensive emoji detection)
           const hasEmoji = /^[\p{Emoji}]/u.test(item);
-          
-          let emoji = '';
+
+          let emoji = "";
           let textContent = item;
-          
+
           if (hasEmoji) {
             // Extract the first emoji and the rest of the text
             const emojiMatch = item.match(/^([\p{Emoji}]+)/u);
