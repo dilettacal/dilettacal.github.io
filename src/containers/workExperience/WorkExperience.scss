@@ -38,26 +38,8 @@
 
 @media (max-width: 768px) {
   .experience-cards-div {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
-    gap: 12px !important; /* <- the only spacing between cards */
-    margin-top: 0 !important; /* ensure no container offset */
-    padding-top: 0 !important;
-  }
-
-  /* Kill ALL card margins that might override gap */
-  .experience-cards-div > .exp-card {
-    margin: 0 !important;
-    padding: 0 !important;
-    margin-top: 0 !important;
-    margin-bottom: -110px !important;
-  }
-
-  /* Some templates add margin to non-last or first card — neutralize both */
-  .experience-cards-div > .exp-card:not(:last-child) {
-    margin-bottom: -95px !important;
-  }
-  .experience-cards-div > .exp-card:first-child {
-    margin-bottom: -110px !important;
+    gap: 1rem;
   }
 }

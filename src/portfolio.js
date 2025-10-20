@@ -215,7 +215,8 @@ const techStack = {
         {customIcon: PytorchIcon, name: "PyTorch"},
         {customIcon: JupyterIcon, name: "Jupyter"},
         {customIcon: NumpyIcon, name: "NumPy"},
-        {customIcon: PandasIcon, name: "Pandas"}
+        {customIcon: PandasIcon, name: "Pandas"},
+        {customIcon: DatabricksIcon, name: "Databricks"},
       ]
     },
     {
@@ -241,9 +242,9 @@ const techStack = {
       periods: [
         {start: 5, duration: techStackMaxYears - 5} // 2024-2025
       ],
-      details: `I create lightweight frontends and proof-of-concept interfaces to visualize data, test AI applications, and prototype ideas. 
-        For GenAI projects, I use frameworks like Gradio and Streamlit to build quick interactive demos and validation tools. React, Next.js, and Tailwind CSS support the development of responsive and maintainable UI components when needed. 
-        In my self-publishing work, Canva and Adobe InDesign are used for layout, design, and production of non-fiction titles, combining technical precision with visual clarity.`,
+      details: `I’m currently exploring frontend development by creating lightweight interfaces to visualize data, test AI ideas, and prototype concepts. 
+        For GenAI projects, I use Gradio and Streamlit to build quick interactive demos. When needed, I work with React, Next.js, and Tailwind CSS for responsive, maintainable UIs. 
+        In my self-publishing projects, I use Canva and Adobe InDesign for layout and design, ensuring clean, consistent, and visually engaging results.`,
       icons: [
         {fontAwesomeClassname: "fab fa-react", name: "React"}, //fontAwesomeClassname: "fab fa-react"
         {customIcon: NextdotjsIcon, name: "Next.js"},
@@ -300,14 +301,14 @@ const workExperiences = {
         "🗣️ Improved the recognition and classification accuracy of speech utterances in vehicle assistants by developing hybrid NLU models based on context-free grammars and Machine Learning methods.",
         "🔧 Engineered Python- and Java-based toolchains to enable efficient training, evaluation and packaging of NLU models across different domains and languages.",
         "🤖 Extended assistant functions by implementing a Question-Answering module based on Azure Cognitive Services.",
-        "* Supported NLU pre-development as a Work Study (Dec 2018 -- Aug 2019)."
+        "* Supported NLU pre-development as a Work Study (Dec 2018 - Aug 2019)."
       ]
     },
     {
       role: "Several Roles",
       company: "Early Career",
       companylogo: require("./assets/images/early_career.png"),
-      date: "2012 -- 2018",
+      date: "2012 - 2018",
       desc: "Translator, Linguist and Software Engineer",
       descBullets: [
         "⚙️ At Plunet GmbH: Engineered automated integration tests for online CAT tools to ensure stable interfaces and processes as a Work Study.",
@@ -364,7 +365,7 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "ABecause growing up doesn’t mean stopping learning new cool stuff!",
+    "Because growing up doesn’t mean stopping learning new cool stuff!",
 
   achievementsCards: [
     {
@@ -467,7 +468,7 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: emoji("TALKS 🎙️"),
+  title: emoji("Talks and Public Speaking 🎙️"),
   subtitle: emoji(
     "Broadcasting my lessons learned — with official permission and a shiny badge 😅"
   ),
