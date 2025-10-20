@@ -36,14 +36,33 @@ export default function ExperienceCard({cardInfo, isDark}) {
 
   const GetDescBullets = ({descBullets}) =>
     descBullets
-      ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
+      ? descBullets.map((item, i) => {
+          // Check if the item starts with an emoji (comprehensive emoji detection)
+          const hasEmoji = /^[\p{Emoji}]/u.test(item);
+          
+          let emoji = '';
+          let textContent = item;
+          
+          if (hasEmoji) {
+            // Extract the first emoji and the rest of the text
+            const emojiMatch = item.match(/^([\p{Emoji}]+)/u);
+            if (emojiMatch) {
+              emoji = emojiMatch[1];
+              textContent = item.substring(emoji.length).trim();
+            }
+          }
+
+          return (
+            <li
+              key={i}
+              className={isDark ? "subTitle dark-mode-text" : "subTitle"}
+              data-has-emoji={hasEmoji}
+              data-emoji={emoji}
+            >
+              {textContent}
+            </li>
+          );
+        })
       : null;
 
   return (

@@ -34,7 +34,7 @@ body {
     max-width: 100%;
     height: auto;
   }
-  
+
   /* Image containers - limit size and center */
   .greeting-image-div,
   .skills-image-div,
@@ -44,7 +44,7 @@ body {
     max-width: 500px;
     margin: 0 auto;
   }
-  
+
   /* Lottie animations scale properly */
   .greeting-image-div > div,
   .greeting-image-div > div > div,
@@ -53,19 +53,18 @@ body {
     max-width: 100% !important;
     height: auto !important;
   }
-  
+
   /* Utility class for any image container */
   .responsive-image-container {
     max-width: 500px;
     margin: 0 auto;
   }
-  
+
   .responsive-image-container img,
   .responsive-image-container > div {
     max-width: 100%;
     height: auto;
   }
-  
 }
 /* Media Query */
 @media (max-width: 1380px) {

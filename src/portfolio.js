@@ -89,18 +89,10 @@ const skillsSection = {
   title: "At a Glance",
   subTitle: "",
   skills: [
-    emoji(
-      "⚡ Design and operate batch and streaming data pipelines"
-    ),
-    emoji(
-      "⚡ Design and develop Generative AI solutions"
-    ),
-    emoji(
-      "⚡ Perform exploratory data analysis and data quality assessment"
-    ),
-    emoji(
-      "⚡ Design and operate scalable cloud architectures"
-    ),
+    emoji("⚡ Design and operate batch and streaming data pipelines"),
+    emoji("⚡ Design and develop Generative AI solutions"),
+    emoji("⚡ Perform exploratory data analysis and data quality assessment"),
+    emoji("⚡ Design and operate scalable cloud architectures")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -110,10 +102,10 @@ https://fontawesome.com/icons?d=gallery */
     {skillName: "python", fontAwesomeClassname: "fab fa-python"},
     {skillName: "openai", customIcon: OpenaiIcon},
     {skillName: "databricks", customIcon: DatabricksIcon},
-    {skillName: "databases", fontAwesomeClassname: "fas fa-database"},    
+    {skillName: "databases", fontAwesomeClassname: "fas fa-database"},
     {skillName: "huggingface", customIcon: HuggingfaceIcon},
     {skillName: "azure", customIcon: AzureIcon},
-    {skillName: "kubernetes", customIcon: KubernetesIcon},  
+    {skillName: "kubernetes", customIcon: KubernetesIcon},
     {skillName: "github actions", customIcon: GithubActionsIcon}
   ],
   display: true // Set false to hide this section, defaults to true
@@ -214,8 +206,7 @@ const techStack = {
         {start: 0, duration: 1}, // 2018-2021
         {start: 4, duration: 3} // 2022-2025
       ],
-      details:
-        `I perform exploratory data analysis to assess data integrity, detect anomalies, and derive initial insights that inform downstream modeling and system design. 
+      details: `I perform exploratory data analysis to assess data integrity, detect anomalies, and derive initial insights that inform downstream modeling and system design. 
         My work combines descriptive statistics, visualization, and hypothesis-driven investigation to understand data behavior and edge cases before formal pipeline integration. 
         Typical tasks include profiling large telemetry and geospatial datasets, verifying schema consistency, validating business metrics, and identifying data quality issues early in the development cycle. 
         Analyses are carried out primarily in Python using pandas, NumPy, and visualization libraries to support both ad-hoc studies and structured reporting.`,
@@ -232,8 +223,7 @@ const techStack = {
       periods: [
         {start: 3, duration: 4} // 2018-2022
       ],
-      details:
-        `I design, deploy, and maintain cloud-native systems on Azure and AWS, focusing on scalability, automation, and observability. 
+      details: `I design, deploy, and maintain cloud-native systems on Azure and AWS, focusing on scalability, automation, and observability. 
         Infrastructure is defined as code using Bicep and Terraform to ensure reproducible, version-controlled environments. 
         Containerization with Docker and orchestration via Kubernetes enable modular, microservice-based architectures. 
         CI/CD pipelines built with GitHub Actions automate build, test, and release processes, while continuous monitoring ensures high availability and operational stability across environments.`,
@@ -251,8 +241,7 @@ const techStack = {
       periods: [
         {start: 5, duration: techStackMaxYears - 5} // 2024-2025
       ],
-      details:
-        `I create lightweight frontends and proof-of-concept interfaces to visualize data, test AI applications, and prototype ideas. 
+      details: `I create lightweight frontends and proof-of-concept interfaces to visualize data, test AI applications, and prototype ideas. 
         For GenAI projects, I use frameworks like Gradio and Streamlit to build quick interactive demos and validation tools. React, Next.js, and Tailwind CSS support the development of responsive and maintainable UI components when needed. 
         In my self-publishing work, Canva and Adobe InDesign are used for layout, design, and production of non-fiction titles, combining technical precision with visual clarity.`,
       icons: [
@@ -282,7 +271,9 @@ const workExperiences = {
       date: "Jan 2024 – Present",
       desc: "Founder of a non fictionpublishing company.",
       descBullets: [
-        "Managed small-scale publishing projects as a side activity, covering market and niche analysis, AI-assisted review mining, and targeted Amazon/Meta ad campaigns — applying data-driven methods and project management skills to improve visibility and profitability."
+        "📚 Built and scaled a non-fiction publishing line (~2 titles/year), achieving Amazon bestseller status through AI-assisted market research and data-driven topic validation.",
+        "🚀 Designed automated workflows using LLM (agents) for content planning, ad optimization, and multilingual asset creation.",
+        "🧩 Managed full publishing lifecycle—outsourcing, editing, and design—while maintaining lean, automation-based operations."
       ]
     },
     {
@@ -292,11 +283,11 @@ const workExperiences = {
       date: "March 2022 – Present",
       desc: "Data pipeliens, Data Science and AI Engineering",
       descBullets: [
-        "Developed production-ready GenAI solutions for survey response prediction, feedback summarization and agent-based project management automation.",
-        "Improved positional accuracy of over 78,000 charging stations by designing and operating large-scale EV telemetry pipelines for millions of vehicles of the Volkswagen Group.",
-        "Significantly contributed to the migration from Databricks-Medallion architecture to Kubernetes-Microservices, achieving a reduction of operating costs by approximately 70% with increased stability of streaming pipelines.",
-        "Led code reviews, mentoring and knowledge sharing initiatives to ensure technical quality and prevent knowledge silos.",
-        "Conducted exploratory data analysis to ensure data integrity and data contract compliance; clarified anomalies in close collaboration with stakeholders."
+        "🤖 Developed production-ready GenAI solutions for survey response prediction, feedback summarization and agent-based project management automation.",
+        "📍 Improved positional accuracy of over 78,000 charging stations by designing and operating large-scale EV telemetry pipelines for millions of vehicles of the Volkswagen Group.",
+        "📉 Significantly contributed to the migration from Databricks-Medallion architecture to Kubernetes-Microservices, achieving a reduction of operating costs by approximately 70% with increased stability of streaming pipelines.",
+        "👥 Led code reviews, mentoring and knowledge sharing initiatives to ensure technical quality and prevent knowledge silos.",
+        "📊 Conducted exploratory data analysis to ensure data integrity and data contract compliance; clarified anomalies in close collaboration with stakeholders."
       ]
     },
     {
@@ -306,9 +297,9 @@ const workExperiences = {
       date: "Dec 2018 – Feb 2022 *",
       desc: "NLU Software Engineer for Group Digital Assistant.",
       descBullets: [
-        "Improved the recognition and classification accuracy of speech utterances in vehicle assistants by developing hybrid NLU models based on context-free grammars and Machine Learning methods.",
-        "Engineered Python- and Java-based toolchains to enable efficient training, evaluation and packaging of NLU models across different domains and languages.",
-        "Extended assistant functions by implementing a Question-Answering module based on Azure Cognitive Services.",
+        "🗣️ Improved the recognition and classification accuracy of speech utterances in vehicle assistants by developing hybrid NLU models based on context-free grammars and Machine Learning methods.",
+        "🔧 Engineered Python- and Java-based toolchains to enable efficient training, evaluation and packaging of NLU models across different domains and languages.",
+        "🤖 Extended assistant functions by implementing a Question-Answering module based on Azure Cognitive Services.",
         "* Supported NLU pre-development as a Work Study (Dec 2018 -- Aug 2019)."
       ]
     },
@@ -319,8 +310,8 @@ const workExperiences = {
       date: "2012 -- 2018",
       desc: "Translator, Linguist and Software Engineer",
       descBullets: [
-        "At Plunet GmbH: Engineered automated integration tests for online CAT tools to ensure stable interfaces and processes as a Work Study.",
-        "At think global GmbH and as a Freelancer: Performed technical translation with a focus on (machine) translation and NLP-based automation and data preparation."
+        "⚙️ At Plunet GmbH: Engineered automated integration tests for online CAT tools to ensure stable interfaces and processes as a Work Study.",
+        "🌍 At think global GmbH and as a Freelancer: Performed technical translation with a focus on (machine) translation and NLP-based automation and data preparation."
       ]
     }
   ]

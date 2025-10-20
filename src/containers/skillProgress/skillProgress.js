@@ -9,7 +9,11 @@ import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StackProgress() {
   const [activeTooltip, setActiveTooltip] = useState(null);
-  const [tooltipPosition, setTooltipPosition] = useState({top: 0, left: 0, width: 0});
+  const [tooltipPosition, setTooltipPosition] = useState({
+    top: 0,
+    left: 0,
+    width: 0
+  });
   const meterRefs = useRef([]);
 
   if (techStack.viewSkillBars) {
@@ -101,7 +105,7 @@ export default function StackProgress() {
                     )}
                   </div>
                   <div
-                    ref={el => meterRefs.current[i] = el}
+                    ref={el => (meterRefs.current[i] = el)}
                     className="meter"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
@@ -159,12 +163,13 @@ export default function StackProgress() {
             })}
 
             {/* Render tooltip via portal */}
-            {activeTooltip !== null && techStack.experience[activeTooltip]?.details && 
+            {activeTooltip !== null &&
+              techStack.experience[activeTooltip]?.details &&
               createPortal(
-                <div 
+                <div
                   className="skill-tooltip-portal"
                   style={{
-                    position: 'absolute',
+                    position: "absolute",
                     top: `${tooltipPosition.top + 8}px`,
                     left: `${tooltipPosition.left}px`,
                     width: `${tooltipPosition.width}px`,
@@ -177,8 +182,7 @@ export default function StackProgress() {
                   </div>
                 </div>,
                 document.body
-              )
-            }
+              )}
           </div>
 
           <div className="skills-image">

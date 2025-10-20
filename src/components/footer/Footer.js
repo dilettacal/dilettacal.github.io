@@ -13,13 +13,13 @@ export default function Footer() {
           © 2025 Diletta Calussi
         </p>
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Customized from Theme {" "}
+          Customized from Theme{" "}
           <a
             href="https://github.com/saadpasta/developerFolio"
             target="_blank"
             rel="noreferrer"
           >
-            developerFolio 
+            developerFolio
           </a>
           , made with ❤️ by DeveloperFolio Team
         </p>
