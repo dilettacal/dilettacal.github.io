@@ -36,6 +36,10 @@
   background: $progressBarBackground;
   border-radius: 0;
   flex: 1;
+  // Improve touch interaction on mobile devices
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
 }
 
 // Dark mode: reduce brightness of empty progress bar

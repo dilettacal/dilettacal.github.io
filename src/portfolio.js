@@ -155,9 +155,7 @@ const techStack = {
   experience: [
     {
       Stack: "Data Engineering",
-      periods: [
-        {start: techStackMaxYears - 6, duration: 6} 
-      ],
+      periods: [{start: techStackMaxYears - 6, duration: 6}],
       details: `I design and operate data systems that combine batch and streaming processing, primarily on Azure. 
         Data ingestion is event-driven or push/pull-based, integrating structured, semi-structured, and unstructured sources into Python-based pipelines and microservice architectures. 
         Transformations and aggregations are implemented according to use-case complexity, with storage spanning Redis, MongoDB, and PostgreSQL. 

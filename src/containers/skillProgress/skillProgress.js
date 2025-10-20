@@ -19,7 +19,7 @@ export default function StackProgress() {
   if (techStack.viewSkillBars) {
     // Use the configurable maxYears from portfolio.js
     const maxYears = techStack.maxYears;
-    
+
     // Calculate start and end years
     const currentYear = new Date().getFullYear();
     const startYear = currentYear - maxYears;
@@ -73,6 +73,15 @@ export default function StackProgress() {
                 }
               };
 
+              // Handle touch events for mobile devices (single tap to show/hide)
+              const handleTouchEnd = e => {
+                if (exp.details) {
+                  e.preventDefault(); // Prevent mouse events from firing
+                  updateTooltipPosition();
+                  setActiveTooltip(activeTooltip === i ? null : i);
+                }
+              };
+
               return (
                 <div key={i} className="skill">
                   <div className="skill-header-with-icons">
@@ -108,21 +117,25 @@ export default function StackProgress() {
                       </div>
                     )}
                   </div>
-                  
+
                   <div className="meter-with-years">
-                    <span className="year-label year-label-left">{startYear}</span>
+                    <span className="year-label year-label-left">
+                      {startYear}
+                    </span>
                     <div
                       ref={el => (meterRefs.current[i] = el)}
                       className="meter"
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
                       onClick={handleClick}
+                      onTouchEnd={handleTouchEnd}
                       style={{cursor: exp.details ? "pointer" : "default"}}
                     >
                       {/* Render multiple periods as separate segments */}
                       {exp.periods ? (
                         exp.periods.map((period, periodIndex) => {
-                          const startPercentage = (period.start / maxYears) * 100;
+                          const startPercentage =
+                            (period.start / maxYears) * 100;
                           const durationPercentage =
                             (period.duration / maxYears) * 100;
 
@@ -165,7 +178,9 @@ export default function StackProgress() {
                         );
                       })}
                     </div>
-                    <span className="year-label year-label-right">{currentYear}</span>
+                    <span className="year-label year-label-right">
+                      {currentYear}
+                    </span>
                   </div>
                 </div>
               );
