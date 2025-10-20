@@ -17,6 +17,11 @@
   text-align: center;
 }
 
+// Dark mode: ensure year labels are visible
+.dark-mode .year-label {
+  opacity: 0.6;
+}
+
 .year-label-left {
   text-align: left;
 }
@@ -32,6 +37,12 @@
   border-radius: 0;
   flex: 1;
 }
+
+// Dark mode: reduce brightness of empty progress bar
+.dark-mode .meter {
+  background: rgba(255, 255, 255, 0.15);
+}
+
 .meter > span {
   display: block;
   height: 100%;
@@ -54,6 +65,11 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 2;
+}
+
+// Dark mode: subtle tick marks
+.dark-mode .year-tick {
+  background-color: rgba(255, 255, 255, 0.25);
 }
 .skill {
   line-height: 3.5vw;
