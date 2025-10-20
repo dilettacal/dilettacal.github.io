@@ -160,6 +160,16 @@
   .exp-card {
     height: auto !important; /* override fixed height on mobile */
     min-height: unset; /* remove minimum height */
+    margin-bottom: -110px !important; /* Control spacing between cards on mobile */
+    margin-top: 0 !important; /* Ensure no top margin interferes */
+  }
+  
+  .exp-card:first-child {
+    margin-top: 0 !important; /* Explicitly ensure first card has no top margin */
+  }
+  
+  .exp-card:last-child {
+    margin-bottom: 0 !important; /* Remove margin from last card */
   }
 
   .exp-card-inner {
@@ -207,6 +217,45 @@
   }
   .experience-text-desc {
     font-size: 14px;
+  }
+
+  /* Expanded card styles (consolidated from duplicate media query) */
+  .expanded-surface {
+    padding: 1.5rem;
+  }
+
+  .expanded-header {
+    grid-template-columns: 70px 1fr;
+    gap: 1rem;
+  }
+
+  .expanded-logo {
+    width: 70px;
+    height: 70px;
+    padding: 6px;
+  }
+
+  .expanded-title h4 {
+    font-size: 1.3rem;
+  }
+
+  .expanded-body {
+    gap: 1.25rem;
+  }
+
+  .expanded-description {
+    font-size: 1rem;
+  }
+
+  .expanded-list {
+    gap: 0.4rem 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .expanded-close {
+    margin-top: 1.25rem;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -485,46 +534,7 @@
   }
 }
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .expanded-surface {
-    padding: 1.5rem;
-  }
-
-  .expanded-header {
-    grid-template-columns: 70px 1fr;
-    gap: 1rem;
-  }
-
-  .expanded-logo {
-    width: 70px;
-    height: 70px;
-    padding: 6px;
-  }
-
-  .expanded-title h4 {
-    font-size: 1.3rem;
-  }
-
-  .expanded-body {
-    gap: 1.25rem;
-  }
-
-  .expanded-description {
-    font-size: 1rem;
-  }
-
-  .expanded-list {
-    gap: 0.4rem 0.75rem;
-    font-size: 0.95rem;
-  }
-
-  .expanded-close {
-    margin-top: 1.25rem;
-    width: 100%;
-    text-align: center;
-  }
-}
+/* Mobile adjustments - consolidated above in main @media (max-width: 768px) block */
 
 /* Landscape mobile / small tablets */
 @media (max-width: 768px) and (orientation: landscape) {
