@@ -270,7 +270,7 @@ const workExperiences = {
       company: "Freelance",
       companylogo: require("./assets/images/reboot_logo.png"),
       date: "Jan 2024 – Present",
-      desc: "Founder of a non fictionpublishing company.",
+      desc: "Founder of a non-fiction publishing company.",
       descBullets: [
         "📚 Built and scaled a non-fiction publishing line (~2 titles/year), achieving Amazon bestseller status through AI-assisted market research and data-driven topic validation.",
         "🚀 Designed automated workflows using LLM (agents) for content planning, ad optimization, and multilingual asset creation.",
@@ -282,12 +282,12 @@ const workExperiences = {
       company: "CARIAD SE",
       companylogo: require("./assets/images/cariad_tech_logo.jpeg"),
       date: "March 2022 – Present",
-      desc: "Data pipeliens, Data Science and AI Engineering",
+      desc: "Data Pipelines, Data Science and AI Engineering",
       descBullets: [
         "🤖 Developed production-ready GenAI solutions for survey response prediction, feedback summarization and agent-based project management automation.",
         "📍 Improved positional accuracy of over 78,000 charging stations by designing and operating large-scale EV telemetry pipelines for millions of vehicles of the Volkswagen Group.",
         "📉 Significantly contributed to the migration from Databricks-Medallion architecture to Kubernetes-Microservices, achieving a reduction of operating costs by approximately 70% with increased stability of streaming pipelines.",
-        "👥 Led code reviews, mentoring and knowledge sharing initiatives to ensure technical quality and prevent knowledge silos.",
+        "👥 Led code reviews, mentoring and knowledge-sharing initiatives to ensure technical quality and prevent knowledge silos.",
         "📊 Conducted exploratory data analysis to ensure data integrity and data contract compliance; clarified anomalies in close collaboration with stakeholders."
       ]
     },
@@ -407,7 +407,7 @@ const achievementSection = {
     {
       title: "Building Agentic AI Systems",
       subtitle:
-        "Overview of Agentic AI systemthat and how to enable autonomous decision-making.",
+        "Overview of Agentic AI systems and how to enable autonomous decision-making.",
       image: linkedinLogo,
       imageAlt: "Linkedin Logo",
       duration: "few hours",
