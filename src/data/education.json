@@ -1,0 +1,31 @@
+{
+  "_notice": "⚠️ PERSONAL DATA - This content belongs to Diletta Calussi and must NOT be used by others. Replace with your own information. See src/data/README.md",
+  "display": true,
+  "schools": [
+    {
+      "schoolName": "University of Applied Sciences Berlin",
+      "logoKey": "htw_berlin",
+      "subHeader": "Bachelor of Science in Applied Computer Science (Second Study)",
+      "duration": "October 2016 - September 2019",
+      "desc": "Focus on Data Science and AI.",
+      "descBullets": null
+    },
+    {
+      "schoolName": "University of Pisa",
+      "logoKey": "unipi",
+      "subHeader": "Master of Arts Linguistics and Translation (First Study)",
+      "duration": "September 2006 - May 2013",
+      "desc": "Focus on Linguistics and Translation.",
+      "descBullets": null
+    },
+    {
+      "schoolName": "University of Pisa",
+      "logoKey": "unipi",
+      "subHeader": "Bachelor of Arts in Languages and Literature (First Study)",
+      "duration": "September 2006 - May 2013",
+      "desc": "Focus on Linguistics, Languages, Literature and Translation.",
+      "descBullets": null
+    }
+  ]
+}
+

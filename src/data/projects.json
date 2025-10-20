@@ -1,0 +1,31 @@
+{
+  "_notice": "⚠️ PERSONAL DATA - This content belongs to Diletta Calussi and must NOT be used by others. Replace with your own information. See src/data/README.md",
+  "title": "Projects & Activities",
+  "subtitle": "🛠️ Technical contributions and beyond 🚀",
+  "display": false,
+  "projects": [
+    {
+      "imageKey": "car_ai",
+      "projectName": "Charging Feedback",
+      "projectDesc": "Enhancing the Charging Experience by leveraging Swarm Data",
+      "footerLink": [
+        {
+          "name": "Read more",
+          "url": "https://cariad.technology/de/en/news/stories/enhancing-charging-experience.html"
+        }
+      ]
+    },
+    {
+      "imageKey": "code_as_you_are",
+      "projectName": "Code as you are (LGBTIQ+ network)",
+      "projectDesc": "Part of CORE Team at CARIAD's LGBTIQ+ network",
+      "footerLink": [
+        {
+          "name": "Read More",
+          "url": "https://cariad.technology/de/en/careers/diversity-and-inclusion.html"
+        }
+      ]
+    }
+  ]
+}
+

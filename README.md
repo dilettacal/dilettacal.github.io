@@ -4,6 +4,20 @@
 
 My personal portfolio website showcasing my professional experience as a Data Engineer and AI Engineer. Built with React and heavily customized to highlight my work in data engineering, NLP, and AI systems.
 
+## ⚠️ Personal Data Notice
+
+**The content in `src/data/` folder is personal and proprietary.** 
+
+- ✅ **You CAN** use the code, structure, and configuration system
+- ❌ **You CANNOT** use the personal data (work history, education, certifications, etc.)
+
+If you want to use this as a template:
+1. Replace ALL JSON files in `src/data/` with your own information
+2. Follow the structure documented in [DATA_STRUCTURE.md](DATA_STRUCTURE.md)
+3. See [src/data/README.md](src/data/README.md) for details
+
+**Using someone else's professional history is unethical and potentially illegal.**
+
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fdilettacal.github.io)](https://dilettacal.github.io)
 [![React](https://img.shields.io/badge/React-16.10.2-blue.svg)](https://reactjs.org/)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
@@ -83,81 +97,75 @@ The application will open at `http://localhost:3000` in your browser.
 
 ## 🎨 Customization
 
+### 📚 Documentation
+
+This portfolio uses a **JSON-based configuration system** for easy content management:
+
+- **[DATA_STRUCTURE.md](DATA_STRUCTURE.md)** - Complete guide to the JSON data structure
+- **[OPTIONAL_SECTIONS_GUIDE.md](OPTIONAL_SECTIONS_GUIDE.md)** - How to enable blogs, podcasts, resume, etc.
+- **[JSON_FILES_REFERENCE.md](JSON_FILES_REFERENCE.md)** - Quick reference of all JSON files
+
 ### Update Personal Information
 
-All personal information and content is centralized in the `src/portfolio.js` file. Edit this file to customize:
+All personal information and content is stored in **JSON files** in the `src/data/` folder. No React knowledge needed!
 
-1. **Greeting Section**
-```javascript
-const greeting = {
-  username: "yourUsername",
-  title: "Hi all, I'm Your Name",
-  subTitle: emoji("Your professional summary here"),
-  resumeLink: "link-to-your-resume",
-  displayGreeting: true
-};
-```
+#### Quick Examples
 
-2. **Social Media Links**
-```javascript
-const socialMediaLinks = {
-  github: "https://github.com/yourusername",
-  linkedin: "https://www.linkedin.com/in/yourusername/",
-  gmail: "your.email@gmail.com",
-  // ... other social links
-};
-```
-
-3. **Skills Section**
-```javascript
-const skillsSection = {
-  title: "What I Do",
-  subTitle: "Your tagline",
-  skills: [
-    emoji("⚡ Your skill 1"),
-    emoji("⚡ Your skill 2"),
-    // ... more skills
-  ],
-  softwareSkills: [
-    {skillName: "python", fontAwesomeClassname: "fab fa-python"},
-    // ... more skills
-  ]
-};
-```
-
-4. **Work Experience**
-```javascript
-const workExperiences = {
-  experience: [
+1. **Update Work Experience** - Edit `src/data/experience.json`:
+```json
+{
+  "experiences": [
     {
-      role: "Your Role",
-      company: "Company Name",
-      companylogo: require("./assets/images/company-logo.png"),
-      date: "Start Date – End Date",
-      desc: "Brief description",
-      descBullets: [
-        "Achievement 1",
-        "Achievement 2"
-      ]
+      "role": "Your New Role",
+      "company": "Company Name",
+      "companyLogoKey": "company_key",
+      "date": "Start – End",
+      "desc": "What you do",
+      "descBullets": ["Achievement 1", "Achievement 2"]
     }
   ]
-};
+}
 ```
 
-5. **Education**
-```javascript
-const educationInfo = {
-  schools: [
+2. **Update Skills** - Edit `src/data/skills.json`:
+```json
+{
+  "skills": [
+    "⚡ Your skill description 1",
+    "⚡ Your skill description 2"
+  ]
+}
+```
+
+3. **Update Contact Info** - Edit `src/data/profile.json`:
+```json
+{
+  "greeting": {
+    "title": "Hi, I'm Your Name",
+    "subTitle": "Your professional summary"
+  },
+  "socialMediaLinks": {
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername"
+  }
+}
+```
+
+4. **Add Certifications** - Edit `src/data/achievements.json`:
+```json
+{
+  "achievementsCards": [
     {
-      schoolName: "University Name",
-      logo: require("./assets/images/school-logo.jpg"),
-      subHeader: "Degree Name",
-      duration: "Start – End",
-      desc: "Description"
+      "title": "Your Certification",
+      "subtitle": "Description",
+      "imageKey": "udemy",
+      "footerLink": [{"name": "View", "url": "cert-url"}]
     }
   ]
-};
+}
 ```
+
+**See [DATA_STRUCTURE.md](DATA_STRUCTURE.md) for complete documentation!**
 
 ### Update Colors
 

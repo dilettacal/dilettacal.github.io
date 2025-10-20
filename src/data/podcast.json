@@ -1,0 +1,10 @@
+{
+  "_notice": "Template file - Replace with your own podcast information",
+  "title": "Podcast 🎙️",
+  "subtitle": "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+  "display": false,
+  "podcast": [
+    "https://anchor.fm/codevcast/embed/episodes/your-episode-link"
+  ]
+}
+

@@ -1,0 +1,47 @@
+{
+  "_notice": "⚠️ PERSONAL DATA - This content belongs to Diletta Calussi and must NOT be used by others. Replace with your own information. See src/data/README.md",
+  "title": "At a Glance",
+  "subTitle": "",
+  "skills": [
+    "⚡ Design and operate batch and streaming data pipelines",
+    "⚡ Design and develop Generative AI solutions",
+    "⚡ Perform exploratory data analysis and data quality assessment",
+    "⚡ Design and operate scalable cloud architectures"
+  ],
+  "softwareSkills": [
+    {
+      "skillName": "python",
+      "fontAwesomeClassname": "fab fa-python"
+    },
+    {
+      "skillName": "openai",
+      "customIcon": "openai"
+    },
+    {
+      "skillName": "databricks",
+      "customIcon": "databricks"
+    },
+    {
+      "skillName": "databases",
+      "fontAwesomeClassname": "fas fa-database"
+    },
+    {
+      "skillName": "huggingface",
+      "customIcon": "huggingface"
+    },
+    {
+      "skillName": "azure",
+      "customIcon": "azure"
+    },
+    {
+      "skillName": "kubernetes",
+      "customIcon": "kubernetes"
+    },
+    {
+      "skillName": "github actions",
+      "customIcon": "githubactions"
+    }
+  ],
+  "display": true
+}
+

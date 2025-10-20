@@ -1,0 +1,95 @@
+{
+  "_notice": "⚠️ PERSONAL DATA - This content belongs to Diletta Calussi and must NOT be used by others. Replace with your own information. See src/data/README.md",
+  "title": "Achievements And Certifications 🏆 ",
+  "subtitle": "Because growing up doesn't mean stopping learning new cool stuff!",
+  "display": true,
+  "achievementsCards": [
+    {
+      "title": "AI in Production: GenAI and Agentic AI at Scale",
+      "subtitle": "Deploy AI to AWS, GCP, Azure, Vercel with MLOps, Bedrock, SageMaker, RAG, Agents, MCP: scalable, secure and observable.",
+      "imageKey": "udemy",
+      "imageAlt": "Udemy Logo",
+      "inProgress": true,
+      "duration": "4 weeks",
+      "footerLink": [
+        {
+          "name": "Certification",
+          "url": ""
+        },
+        {
+          "name": "Course Description",
+          "url": "https://www.udemy.com/course/generative-and-agentic-ai-in-production/"
+        }
+      ]
+    },
+    {
+      "title": "LLM Engineering: Master AI, Large Language Models & Agents",
+      "subtitle": "Build and deploy 8 LLM apps, mastering Generative AI, RAG, LoRA and AI Agents.",
+      "imageKey": "udemy",
+      "imageAlt": "Udemy Logo",
+      "duration": "6 weeks",
+      "footerLink": [
+        {
+          "name": "Certification",
+          "url": "https://www.udemy.com/certificate/UC-805e7dc6-a4b9-4243-837e-ab5809e077c3/"
+        },
+        {
+          "name": "Course Description",
+          "url": "https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/"
+        }
+      ]
+    },
+    {
+      "title": "Building Agentic AI Systems",
+      "subtitle": "Overview of Agentic AI systems and how to enable autonomous decision-making.",
+      "imageKey": "linkedin",
+      "imageAlt": "Linkedin Logo",
+      "duration": "few hours",
+      "footerLink": [
+        {
+          "name": "Certification",
+          "url": "https://www.linkedin.com/learning/certificates/c707857f8e5a09b5a822aa0348e3f4745ed7059344fb3b288d32ae2fba44908a"
+        },
+        {
+          "name": "Course Description",
+          "url": "https://www.linkedin.com/learning/building-agentic-ai-systems/building-the-future-of-agentic-ai-29650812"
+        }
+      ]
+    },
+    {
+      "title": "Fundamentals of Software Architecture for Big Data",
+      "subtitle": "Scalable data systems with robust engineering and big data processing expertise.",
+      "imageKey": "coursera",
+      "imageAlt": "Coursera Logo",
+      "duration": "6 weeks",
+      "footerLink": [
+        {
+          "name": "Certification",
+          "url": "https://www.coursera.org/account/accomplishments/verify/WQLYPQ5L6YBV"
+        },
+        {
+          "name": "Course Description",
+          "url": "https://www.coursera.org/learn/software-architecture-for-big-data-fundamentals"
+        }
+      ]
+    },
+    {
+      "title": "Natural Language Processing Nanodegree",
+      "subtitle": "NLP techniques e.g., tokenization, tagging, sentiment analysis, embeddings, translation, and speech recognition.",
+      "imageKey": "udacity",
+      "imageAlt": "Udacity Logo",
+      "duration": "6 months",
+      "footerLink": [
+        {
+          "name": "Certification",
+          "url": "https://www.udacity.com/certificate/A7SD37GJ"
+        },
+        {
+          "name": "Course Description",
+          "url": "https://www.udacity.com/course/natural-language-processing-nanodegree--nd892"
+        }
+      ]
+    }
+  ]
+}
+

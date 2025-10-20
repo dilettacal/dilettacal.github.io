@@ -1,0 +1,15 @@
+{
+  "_notice": "Template file - Configure with your own social media settings",
+  "twitter": {
+    "userName": "twitter",
+    "display": false
+  },
+  "splashScreen": {
+    "enabled": true,
+    "duration": 2000
+  },
+  "illustration": {
+    "animated": true
+  }
+}
+

@@ -1,0 +1,20 @@
+{
+  "_notice": "Template file - Replace with your own blog information",
+  "title": "Blogs",
+  "subtitle": "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  "displayMediumBlogs": "true",
+  "display": false,
+  "blogs": [
+    {
+      "url": "https://blog.example.com/your-first-blog-post",
+      "title": "Your First Blog Post Title",
+      "description": "A brief description of what this blog post is about. Keep it concise and engaging."
+    },
+    {
+      "url": "https://blog.example.com/your-second-blog-post",
+      "title": "Your Second Blog Post Title",
+      "description": "Another interesting blog post description that will attract readers."
+    }
+  ]
+}
+

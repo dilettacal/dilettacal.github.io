@@ -1,0 +1,27 @@
+{
+  "_notice": "⚠️ PERSONAL DATA - This content belongs to Diletta Calussi and must NOT be used by others. Replace with your own information. See src/data/README.md",
+  "greeting": {
+    "username": "dilettacal",
+    "title": "Hi all, I'm Diletta",
+    "subTitle": "A passionate AI and Data Engineer with 8+ years of experience spanning data engineering, NLP, and AI.",
+    "resumeLink": "",
+    "displayGreeting": true
+  },
+  "socialMediaLinks": {
+    "github": "https://github.com/dilettacal",
+    "linkedin": "https://www.linkedin.com/in/dilettacal/",
+    "gmail": "dilettacal.dev@gmail.com",
+    "gitlab": "",
+    "facebook": "",
+    "medium": "",
+    "stackoverflow": "",
+    "display": true
+  },
+  "contactInfo": {
+    "title": "Contact Me ☎️",
+    "subtitle": "Are you hiring a Senior Data/AI Engineer? Feel free to reach out to me!",
+    "email_address": "dilettacal.dev@gmail.com"
+  },
+  "isHireable": true
+}
+

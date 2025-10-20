@@ -1,0 +1,17 @@
+{
+  "_notice": "⚠️ PERSONAL DATA - This content belongs to Diletta Calussi and must NOT be used by others. Replace with your own information. See src/data/README.md",
+  "title": "Talks and Public Speaking 🎙️",
+  "subtitle": "Broadcasting my lessons learned — with official permission and a shiny badge 😅",
+  "display": true,
+  "talks": [
+    {
+      "title": "How AI pushed me forward (and not away)",
+      "subtitle": "Unicorns in Tech Summit 2025",
+      "slides_url": "https://www.linkedin.com/posts/dilettacal_what-an-inspiring-day-at-the-unicorns-in-activity-7383546764525637632-jdBK",
+      "slides_button_text": "Post",
+      "event_url": "https://www.unicornsintech.com/uits25/",
+      "event_button_text": "Event"
+    }
+  ]
+}
+
