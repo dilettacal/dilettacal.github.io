@@ -32,7 +32,9 @@ export default function Talks() {
                   title: talk.title,
                   subtitle: talk.subtitle,
                   slides_url: talk.slides_url,
+                  slides_button_text: talk.slides_button_text || "Slides",
                   event_url: talk.event_url,
+                  event_button_text: talk.event_button_text || "Event",
                   image: talk.image,
                   isDark
                 }}

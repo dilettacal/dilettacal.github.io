@@ -364,7 +364,7 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "ABecause growing up doesn’t mean stopping learning new cool stuff!",
 
   achievementsCards: [
     {
@@ -467,9 +467,9 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: emoji("TALKS 🎙️"),
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "Broadcasting my lessons learned — with official permission and a shiny badge 😅"
   ),
 
   talks: [
@@ -478,7 +478,9 @@ const talkSection = {
       subtitle: "Unicorns in Tech Summit 2025",
       slides_url:
         "https://www.linkedin.com/posts/dilettacal_what-an-inspiring-day-at-the-unicorns-in-activity-7383546764525637632-jdBK",
-      event_url: "https://www.unicornsintech.com/uits25/"
+      slides_button_text: "Post",
+      event_url: "https://www.unicornsintech.com/uits25/",
+      event_button_text: "Event"
     }
   ],
   display: true // Set false to hide this section, defaults to true
