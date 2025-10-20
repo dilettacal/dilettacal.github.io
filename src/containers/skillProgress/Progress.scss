@@ -293,15 +293,14 @@
 @media (max-width: 768px) {
   .skills-container {
     flex-direction: column;
-    width: 95%; /* Slightly wider on mobile for better use of space */
+    width: 90%; /* Match other sections for consistent alignment */
   }
   .skills-bar {
     line-height: 3rem;
-    margin: 20px;
-    margin-left: 0; /* Remove desktop flex spacing on mobile */
+    margin: 0; /* Remove extra margins to align with other sections */
   }
   .skills-image {
-    display: none;
+    display: none; /* Hide image on mobile */
     order: 2;
   }
 
