@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
+import {createPortal} from "react-dom";
 import "./Progress.scss";
 import {illustration, techStack} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -8,6 +9,8 @@ import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StackProgress() {
   const [activeTooltip, setActiveTooltip] = useState(null);
+  const [tooltipPosition, setTooltipPosition] = useState({top: 0, left: 0, width: 0});
+  const meterRefs = useRef([]);
 
   if (techStack.viewSkillBars) {
     // Use the configurable maxYears from portfolio.js
@@ -31,8 +34,20 @@ export default function StackProgress() {
 
               const cappedTotalYears = Math.min(totalYears, maxYears);
 
+              const updateTooltipPosition = () => {
+                if (meterRefs.current[i]) {
+                  const rect = meterRefs.current[i].getBoundingClientRect();
+                  setTooltipPosition({
+                    top: rect.bottom + window.scrollY,
+                    left: rect.left + window.scrollX,
+                    width: rect.width
+                  });
+                }
+              };
+
               const handleMouseEnter = () => {
                 if (exp.details) {
+                  updateTooltipPosition();
                   setActiveTooltip(i);
                 }
               };
@@ -43,6 +58,9 @@ export default function StackProgress() {
 
               const handleClick = () => {
                 if (exp.details) {
+                  if (activeTooltip !== i) {
+                    updateTooltipPosition();
+                  }
                   setActiveTooltip(activeTooltip === i ? null : i);
                 }
               };
@@ -83,6 +101,7 @@ export default function StackProgress() {
                     )}
                   </div>
                   <div
+                    ref={el => meterRefs.current[i] = el}
                     className="meter"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
@@ -135,18 +154,31 @@ export default function StackProgress() {
                       );
                     })}
                   </div>
-                  {/* Tooltip */}
-                  {exp.details && activeTooltip === i && (
-                    <div className="skill-tooltip">
-                      <div className="tooltip-content">
-                        <p>{exp.details}</p>
-                        <div className="tooltip-arrow"></div>
-                      </div>
-                    </div>
-                  )}
                 </div>
               );
             })}
+
+            {/* Render tooltip via portal */}
+            {activeTooltip !== null && techStack.experience[activeTooltip]?.details && 
+              createPortal(
+                <div 
+                  className="skill-tooltip-portal"
+                  style={{
+                    position: 'absolute',
+                    top: `${tooltipPosition.top + 8}px`,
+                    left: `${tooltipPosition.left}px`,
+                    width: `${tooltipPosition.width}px`,
+                    zIndex: 999999
+                  }}
+                >
+                  <div className="tooltip-content">
+                    <p>{techStack.experience[activeTooltip].details}</p>
+                    <div className="tooltip-arrow"></div>
+                  </div>
+                </div>,
+                document.body
+              )
+            }
           </div>
 
           <div className="skills-image">

@@ -348,26 +348,22 @@
   }
 }
 
-// Tooltip styles - apply to all devices
-.skill-tooltip {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  margin-top: 0.5rem;
+// Tooltip styles - rendered via portal to document.body
+.skill-tooltip-portal {
+  pointer-events: none;
 }
 
 .tooltip-content {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.95);
   color: white;
   padding: 0.75rem;
   border-radius: 8px;
   font-size: 0.85rem;
   line-height: 1.2;
   position: relative;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   max-width: 280px;
+  pointer-events: auto;
 }
 
 /* Desktop tooltip improvements */
@@ -388,7 +384,7 @@
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 8px solid rgba(0, 0, 0, 0.9);
+  border-bottom: 8px solid rgba(0, 0, 0, 0.95);
 }
 
 .meter {
@@ -398,6 +394,13 @@
 .meter:hover {
   opacity: 0.8;
 }
+
+/* Apply to all screen sizes - paragraph styling for tooltips */
+.tooltip-content p {
+  margin: 0;
+  line-height: 1.4;
+}
+
 
 @media (max-width: 480px) {
   // Mobile: Icons below title, aligned left
@@ -465,8 +468,4 @@
   }
 }
 
-/* Apply to all screen sizes - paragraph styling for tooltips */
-.tooltip-content p {
-  margin: 0;
-  line-height: 1.4;
-}
+
