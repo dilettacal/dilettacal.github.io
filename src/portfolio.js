@@ -262,8 +262,8 @@ const techStack = {
 
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
-  hint: emoji("For more details, click on the card. ⬇️"),
-  subtitle: emoji("Where I have been working on the last years 🎯"),
+  // hint: emoji("For more details, click on the card. ⬇️"),
+  subtitle: emoji("For more details, click on the card. ⬇️"),
   experience: [
     {
       role: "Independent Publisher",
