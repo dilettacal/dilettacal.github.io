@@ -374,6 +374,7 @@ const achievementSection = {
       image: udemyLogo,
       imageAlt: "Udemy Logo",
       inProgress: true,
+      duration: "4 weeks",
       footerLink: [
         {
           name: "Certification",
@@ -391,6 +392,7 @@ const achievementSection = {
         "Build and deploy 8 LLM apps, mastering Generative AI, RAG, LoRA and AI Agents.",
       image: udemyLogo,
       imageAlt: "Udemy Logo",
+      duration: "6 weeks",
       footerLink: [
         {
           name: "Certification",
@@ -405,9 +407,10 @@ const achievementSection = {
     {
       title: "Building Agentic AI Systems",
       subtitle:
-        "Agentic AI systems that enable autonomous decision-making and adaptive learning in dynamic environments.",
+        "Overview of Agentic AI systemthat and how to enable autonomous decision-making.",
       image: linkedinLogo,
       imageAlt: "Linkedin Logo",
+      duration: "few hours",
       footerLink: [
         {
           name: "Certification",
@@ -426,6 +429,7 @@ const achievementSection = {
         "Scalable data systems with robust engineering and big data processing expertise.",
       image: courseraLogo,
       imageAlt: "Coursera Logo",
+      duration: "6 weeks",
       footerLink: [
         {
           name: "Certification",
@@ -443,6 +447,7 @@ const achievementSection = {
         "NLP techniques e.g., tokenization, tagging, sentiment analysis, embeddings, translation, and speech recognition.",
       image: udacityLogo,
       imageAlt: "Udacity Logo",
+      duration: "6 months",
       footerLink: [
         {
           name: "Certification",

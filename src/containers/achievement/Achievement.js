@@ -45,7 +45,8 @@ export default function Achievement() {
                     image: card.image,
                     imageAlt: card.imageAlt,
                     footer: card.footerLink,
-                    inProgress: card.inProgress
+                    inProgress: card.inProgress,
+                    duration: card.duration
                   }}
                 />
               );

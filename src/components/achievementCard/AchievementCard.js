@@ -19,6 +19,12 @@ export default function AchievementCard({cardInfo, isDark}) {
           alt={cardInfo.imageAlt || "Card Thumbnail"}
           className="card-image"
         ></img>
+        {cardInfo.duration && (
+          <div className="course-duration-badge">
+            <span className="duration-icon">⏱️</span>
+            <span className="duration-text">{cardInfo.duration}</span>
+          </div>
+        )}
       </div>
       <div className="certificate-detail-div">
         <h5 className={isDark ? "dark-mode card-title" : "card-title"}>
