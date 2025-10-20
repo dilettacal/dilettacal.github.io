@@ -1,4 +1,4 @@
-import React, {useState, useRef} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import {createPortal} from "react-dom";
 import "./Progress.scss";
 import {illustration, techStack} from "../../portfolio";
@@ -15,6 +15,35 @@ export default function StackProgress() {
     width: 0
   });
   const meterRefs = useRef([]);
+  const tooltipRef = useRef(null);
+
+  // Close tooltip when clicking outside on mobile
+  useEffect(() => {
+    const handleClickOutside = event => {
+      if (activeTooltip !== null) {
+        // Check if click is outside the meter and tooltip
+        const clickedMeter = meterRefs.current.some(
+          ref => ref && ref.contains(event.target)
+        );
+        const clickedTooltip =
+          tooltipRef.current && tooltipRef.current.contains(event.target);
+
+        if (!clickedMeter && !clickedTooltip) {
+          setActiveTooltip(null);
+        }
+      }
+    };
+
+    if (activeTooltip !== null) {
+      document.addEventListener("click", handleClickOutside);
+      document.addEventListener("touchend", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("touchend", handleClickOutside);
+    };
+  }, [activeTooltip]);
 
   if (techStack.viewSkillBars) {
     // Use the configurable maxYears from portfolio.js
@@ -194,6 +223,7 @@ export default function StackProgress() {
               techStack.experience[activeTooltip]?.details &&
               createPortal(
                 <div
+                  ref={tooltipRef}
                   className="skill-tooltip-portal"
                   style={{
                     position: "absolute",
