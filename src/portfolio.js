@@ -405,7 +405,7 @@ const achievementSection = {
     {
       title: "Building Agentic AI Systems",
       subtitle:
-        "Designed Agentic AI systems that enable autonomous decision-making and adaptive learning in dynamic environments.",
+        "Agentic AI systems that enable autonomous decision-making and adaptive learning in dynamic environments.",
       image: linkedinLogo,
       imageAlt: "Linkedin Logo",
       footerLink: [
@@ -423,7 +423,7 @@ const achievementSection = {
     {
       title: "Fundamentals of Software Architecture for Big Data",
       subtitle:
-        "CScalable data systems with robust engineering and big data processing expertise.",
+        "Scalable data systems with robust engineering and big data processing expertise.",
       image: courseraLogo,
       imageAlt: "Coursera Logo",
       footerLink: [
