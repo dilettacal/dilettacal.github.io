@@ -7,7 +7,7 @@
 }
 
 .skills-text-div {
-  margin-left: 50px;
+  margin-left: 200px; /* Increased spacing between image and text on desktop */
 }
 
 .skills-main-div > * {
@@ -15,7 +15,18 @@
   margin-bottom: 30px;
 }
 
+.skills-image-div {
+  max-width: 400px;
+  transform: scale(0.7);
+  transform-origin: center;
+}
+
 .skills-image-div > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.skills-image-div > div {
   max-width: 100%;
   height: auto;
 }

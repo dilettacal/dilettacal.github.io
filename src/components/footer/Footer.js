@@ -21,7 +21,7 @@ export default function Footer() {
           >
             developerFolio
           </a>
-          , made with ❤️ by DeveloperFolio Team
+        , made by DeveloperFolio Team
         </p>
         <p
           className={
