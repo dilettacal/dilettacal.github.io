@@ -30,15 +30,22 @@ export default function AchievementCard({cardInfo, isDark}) {
       </div>
       <div className="certificate-card-footer">
         {cardInfo.footer.map((v, i) => {
+          // Check if this is a Certification link and if the achievement is in progress
+          const isCertification = v.name.toLowerCase().includes("certification");
+          const isInProgress = cardInfo.inProgress && isCertification;
+          
           return (
             <span
               key={i}
               className={
-                isDark ? "dark-mode certificate-tag" : "certificate-tag"
+                isDark 
+                  ? `dark-mode certificate-tag ${isInProgress ? "in-progress" : ""}`
+                  : `certificate-tag ${isInProgress ? "in-progress" : ""}`
               }
-              onClick={() => openUrlInNewTab(v.url, v.name)}
+              onClick={() => !isInProgress && openUrlInNewTab(v.url, v.name)}
+              style={{cursor: isInProgress ? "default" : "pointer"}}
             >
-              {v.name}
+              {isInProgress ? "🔄 In Progress" : v.name}
             </span>
           );
         })}

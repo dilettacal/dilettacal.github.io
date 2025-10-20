@@ -369,6 +369,23 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "AI in Production: GenAI and Agentic AI at Scale",
+      subtitle: "Deploy AI to AWS, GCP, Azure, Vercel with MLOps, Bedrock, SageMaker, RAG, Agents, MCP: scalable, secure and observable.",
+      image: udemyLogo,
+      imageAlt: "Udemy Logo",
+      inProgress: true,
+      footerLink: [
+        {
+          name: "Certification",
+          url: ""
+        },
+        {
+          name: "Course Description",
+          url: "https://www.udemy.com/course/generative-and-agentic-ai-in-production/"
+        }
+      ]
+    },
+    {
       title: "LLM Engineering: Master AI, Large Language Models & Agents",
       subtitle:
         "Build and deploy 8 LLM apps, mastering Generative AI, RAG, LoRA and AI Agents.",

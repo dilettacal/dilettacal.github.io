@@ -78,3 +78,21 @@
 span.certificate-tag:hover {
   background: $buttonHover;
 }
+
+/* In Progress state for certification */
+.certificate-card-footer span.certificate-tag.in-progress {
+  background: linear-gradient(135deg, #ff9a56 0%, #ff6a3d 100%);
+  color: $lightBackground3;
+  cursor: default;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.certificate-card-footer span.certificate-tag.in-progress:hover {
+  background: linear-gradient(135deg, #ff9a56 0%, #ff6a3d 100%);
+  transform: none;
+}
+
+.dark-mode.certificate-card .certificate-tag.in-progress {
+  background: linear-gradient(135deg, #ff7f3d 0%, #ff5722 100%);
+}
