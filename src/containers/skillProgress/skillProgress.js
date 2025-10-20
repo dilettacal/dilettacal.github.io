@@ -19,6 +19,10 @@ export default function StackProgress() {
   if (techStack.viewSkillBars) {
     // Use the configurable maxYears from portfolio.js
     const maxYears = techStack.maxYears;
+    
+    // Calculate start and end years
+    const currentYear = new Date().getFullYear();
+    const startYear = currentYear - maxYears;
 
     return (
       <Fade bottom duration={1000} distance="20px">
@@ -104,59 +108,64 @@ export default function StackProgress() {
                       </div>
                     )}
                   </div>
-                  <div
-                    ref={el => (meterRefs.current[i] = el)}
-                    className="meter"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    onClick={handleClick}
-                    style={{cursor: exp.details ? "pointer" : "default"}}
-                  >
-                    {/* Render multiple periods as separate segments */}
-                    {exp.periods ? (
-                      exp.periods.map((period, periodIndex) => {
-                        const startPercentage = (period.start / maxYears) * 100;
-                        const durationPercentage =
-                          (period.duration / maxYears) * 100;
+                  
+                  <div className="meter-with-years">
+                    <span className="year-label year-label-left">{startYear}</span>
+                    <div
+                      ref={el => (meterRefs.current[i] = el)}
+                      className="meter"
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                      onClick={handleClick}
+                      style={{cursor: exp.details ? "pointer" : "default"}}
+                    >
+                      {/* Render multiple periods as separate segments */}
+                      {exp.periods ? (
+                        exp.periods.map((period, periodIndex) => {
+                          const startPercentage = (period.start / maxYears) * 100;
+                          const durationPercentage =
+                            (period.duration / maxYears) * 100;
 
+                          return (
+                            <span
+                              key={periodIndex}
+                              className="progress-segment"
+                              style={{
+                                position: "absolute",
+                                left: `${startPercentage}%`,
+                                width: `${durationPercentage}%`,
+                                height: "100%",
+                                borderRadius: "0"
+                              }}
+                            />
+                          );
+                        })
+                      ) : (
+                        // Fallback for old format
+                        <span
+                          style={{
+                            position: "absolute",
+                            right: "0",
+                            width: `${(cappedTotalYears / maxYears) * 100}%`,
+                            height: "100%",
+                            borderRadius: "0"
+                          }}
+                        />
+                      )}
+
+                      {/* Add vertical tick marks for years */}
+                      {Array.from({length: maxYears - 1}, (_, tickIndex) => {
+                        const tickPosition = ((tickIndex + 1) / maxYears) * 100;
                         return (
-                          <span
-                            key={periodIndex}
-                            className="progress-segment"
-                            style={{
-                              position: "absolute",
-                              left: `${startPercentage}%`,
-                              width: `${durationPercentage}%`,
-                              height: "100%",
-                              borderRadius: "0"
-                            }}
+                          <div
+                            key={tickIndex}
+                            className="year-tick"
+                            style={{left: `${tickPosition}%`}}
                           />
                         );
-                      })
-                    ) : (
-                      // Fallback for old format
-                      <span
-                        style={{
-                          position: "absolute",
-                          right: "0",
-                          width: `${(cappedTotalYears / maxYears) * 100}%`,
-                          height: "100%",
-                          borderRadius: "0"
-                        }}
-                      />
-                    )}
-
-                    {/* Add vertical tick marks for years */}
-                    {Array.from({length: maxYears - 1}, (_, tickIndex) => {
-                      const tickPosition = ((tickIndex + 1) / maxYears) * 100;
-                      return (
-                        <div
-                          key={tickIndex}
-                          className="year-tick"
-                          style={{left: `${tickPosition}%`}}
-                        />
-                      );
-                    })}
+                      })}
+                    </div>
+                    <span className="year-label year-label-right">{currentYear}</span>
                   </div>
                 </div>
               );
