@@ -12,6 +12,33 @@
 .experience-subtitle {
   margin-top: 50px;
   margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  padding: 0.5rem 0.75rem;
+  background: rgba(0, 0, 0, 0.04);
+  border-left: 3px solid #2aa67fe2;
+  border-radius: 4px;
+  animation: subtleHintPulse 3s ease-in-out infinite;
+  opacity: 0.95;
+}
+
+// Dark mode styling for subtitle
+.dark-mode.experience-subtitle {
+  background: rgba(255, 255, 255, 0.05);
+  opacity: 1;
+}
+
+// Subtle pulse animation to draw attention
+@keyframes subtleHintPulse {
+  0%, 100% {
+    transform: translateX(0);
+    opacity: 0.95;
+  }
+  50% {
+    transform: translateX(2px);
+    opacity: 1;
+  }
 }
 
 .experience-container {
@@ -46,5 +73,14 @@
 
   .experience-subtitle {
     margin-bottom: -60px; /* Compensate for negative margin on first card */
+    padding: 0.45rem 0.65rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-subtitle {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
   }
 }

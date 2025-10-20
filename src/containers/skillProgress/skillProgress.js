@@ -34,6 +34,9 @@ export default function StackProgress() {
             {techStack.subtitle && (
               <p className="skills-subtitle">{techStack.subtitle}</p>
             )}
+            {techStack.hint && (
+              <p className="skills-hint">{techStack.hint}</p>
+            )}
             {techStack.experience.map((exp, i) => {
               // Calculate total years across all periods
               const totalYears = exp.periods

@@ -149,8 +149,9 @@ const techStackMaxYears = 7;
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   subtitle: emoji(
-    "📊 What and where I have been focusing on the last years 🎯  (For more details, click on the bars. ⬇️)"
+    "📊 What and where I have been focusing on the last years 🎯"
   ),
+  hint: emoji("For more details, click on the bars. ⬇️"),
   maxYears: techStackMaxYears, // Configure the maximum years scale (change this to set your desired scale)
   experience: [
     {
@@ -261,7 +262,8 @@ const techStack = {
 
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
-  subtitle: emoji("For more details, click on the card. ⬇️"),
+  hint: emoji("For more details, click on the card. ⬇️"),
+  subtitle: emoji("Where I have been working on the last years 🎯"),
   experience: [
     {
       role: "Independent Publisher",
