@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c024d8b.css",
-    "main.js": "/static/js/main.dbb49d11.js",
+    "main.css": "/static/css/main.4bef27a6.css",
+    "main.js": "/static/js/main.a2f42350.js",
     "static/css/487.a0f4e55a.chunk.css": "/static/css/487.a0f4e55a.chunk.css",
     "static/js/487.ea84ee9e.chunk.js": "/static/js/487.ea84ee9e.chunk.js",
     "static/css/990.9d9655ef.chunk.css": "/static/css/990.9d9655ef.chunk.css",
@@ -54,15 +54,15 @@
     "static/media/newrelic.svg": "/static/media/newrelic.a0dec17807e025b0b005329c9ca8d337.svg",
     "static/media/anthropic.svg": "/static/media/anthropic.691ebfe1e905b7bf08c31c4b160571ab.svg",
     "static/media/terraform.svg": "/static/media/terraform.a9200d5aa9ca98a69c5754dbbd3dc465.svg",
-    "main.2c024d8b.css.map": "/static/css/main.2c024d8b.css.map",
-    "main.dbb49d11.js.map": "/static/js/main.dbb49d11.js.map",
+    "main.4bef27a6.css.map": "/static/css/main.4bef27a6.css.map",
+    "main.a2f42350.js.map": "/static/js/main.a2f42350.js.map",
     "487.a0f4e55a.chunk.css.map": "/static/css/487.a0f4e55a.chunk.css.map",
     "487.ea84ee9e.chunk.js.map": "/static/js/487.ea84ee9e.chunk.js.map",
     "990.9d9655ef.chunk.css.map": "/static/css/990.9d9655ef.chunk.css.map",
     "990.e1392e89.chunk.js.map": "/static/js/990.e1392e89.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c024d8b.css",
-    "static/js/main.dbb49d11.js"
+    "static/css/main.4bef27a6.css",
+    "static/js/main.a2f42350.js"
   ]
 }
