@@ -95,7 +95,11 @@
     font-size: 20px;
   }
 
-  // .contact-image-div {
-  //   display: none;
-  // }
+  .contact-div-main {
+    flex-direction: column;
+  }
+
+  .contact-image-div {
+    display: none;
+  }
 }
