@@ -24,12 +24,15 @@ export default function Projects() {
           throw result;
         })
         .then(response => {
-          setrepoFunction(response.data.user.pinnedItems.edges);
+          // Check if the response has valid data structure
+          if (response.data && response.data.user && response.data.user.pinnedItems) {
+            setrepoFunction(response.data.user.pinnedItems.edges);
+          } else {
+            // Handle case where user is null or data is invalid
+            setrepoFunction("Error");
+          }
         })
         .catch(function (error) {
-          console.error(
-            `${error} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
-          );
           setrepoFunction("Error");
         });
     };
@@ -49,13 +52,8 @@ export default function Projects() {
           <h1 className="project-title">Open Source Projects</h1>
           <div className="repo-cards-div-main">
             {repo.map((v, i) => {
-              if (!v) {
-                console.error(
-                  `Github Object for repository number : ${i} is undefined`
-                );
-              }
               return (
-                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
+                v && <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
               );
             })}
           </div>
