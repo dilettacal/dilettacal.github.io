@@ -156,7 +156,7 @@ const techStack = {
     {
       Stack: "Data Engineering",
       periods: [
-        {start: techStackMaxYears - 5, duration: 5} // last 5 years
+        {start: techStackMaxYears - 6, duration: 6} 
       ],
       details: `I design and operate data systems that combine batch and streaming processing, primarily on Azure. 
         Data ingestion is event-driven or push/pull-based, integrating structured, semi-structured, and unstructured sources into Python-based pipelines and microservice architectures. 
@@ -203,8 +203,8 @@ const techStack = {
     {
       Stack: "Data Science and Analytics",
       periods: [
-        {start: 0, duration: 1}, // 2018-2021
-        {start: 4, duration: 3} // 2022-2025
+        // {start: 0, duration: 1}, // 2018-2021
+        {start: techStackMaxYears - 6, duration: 6} // 2022-2025
       ],
       details: `I perform exploratory data analysis to assess data integrity, detect anomalies, and derive initial insights that inform downstream modeling and system design. 
         My work combines descriptive statistics, visualization, and hypothesis-driven investigation to understand data behavior and edge cases before formal pipeline integration. 
@@ -222,7 +222,7 @@ const techStack = {
     {
       Stack: "Cloud and DevOps",
       periods: [
-        {start: 3, duration: 4} // 2018-2022
+        {start: 2, duration: 5} // last 6 years
       ],
       details: `I design, deploy, and maintain cloud-native systems on Azure and AWS, focusing on scalability, automation, and observability. 
         Infrastructure is defined as code using Bicep and Terraform to ensure reproducible, version-controlled environments. 
