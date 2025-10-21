@@ -13,7 +13,7 @@
           "duration": 4
         }
       ],
-      "details": "I design and operate data systems that combine batch and streaming processing, primarily on Azure. \n        Data ingestion is event-driven or push/pull-based, integrating structured, semi-structured, and unstructured sources into Python-based pipelines and microservice architectures. \n        Transformations and aggregations are implemented according to use-case complexity, with storage spanning Redis, MongoDB, and PostgreSQL. \n        Monitoring and validation are handled through New Relic and automated testing to maintain reliability, scalability, and consistency across environments.",
+      "details": "I design and operate robust data platforms that process both batch and streaming workloads across diverse cloud environments. I can build scalable ingestion and transformation pipelines, implement event-driven architectures, and design data ecosystems using serverless, containerized, or hybrid deployment models. My expertise covers automated testing for data quality, observability and monitoring for operational transparency, and performance optimization to ensure resilience and scalability in production.",
       "icons": [
         {
           "fontAwesomeClassname": "fab fa-python",
@@ -77,7 +77,7 @@
           "duration": 2
         }
       ],
-      "details": "I develop Generative AI solutions focused on chatbots, prediction, summarization, and automation. My work includes agent-based systems for project management using CrewAI and LangChain, integrating open-source and SDK-based models such as OpenAI, Anthropic, and Ollama. \n        In the automotive domain, I have built multilingual NLU models (German/English) for in-car assistants covering a wide range of infotainment and control functions, including but not limited to navigation and climate settings.\n        My experience spans rule-based, grammar-driven, and neural approaches (PyTorch) for intent classification and entity extraction, as well as Neural Machine Translation using sequence-to-sequence architectures like attention-based LSTMs and Transformers.",
+      "details": "I develop and integrate Large Language Model–based systems for applications such as summarization, prediction, and agentic automation. I can design prompt- and retrieval-based architectures, orchestrate multi-agent workflows, and combine open-source and API-based models within secure, monitored environments. My background spans linguistic modeling, hybrid NLU pipelines, and end-to-end deployment of GenAI solutions from prototype to production.",
       "icons": [
         {
           "fontAwesomeClassname": "fab fa-python",
@@ -133,7 +133,7 @@
           "duration": 6
         }
       ],
-      "details": "I perform exploratory data analysis to assess data integrity, detect anomalies, and derive initial insights that inform downstream modeling and system design. \n        My work combines descriptive statistics, visualization, and hypothesis-driven investigation to understand data behavior and edge cases before formal pipeline integration. \n        Typical tasks include profiling large telemetry and geospatial datasets, verifying schema consistency, validating business metrics, and identifying data quality issues early in the development cycle. \n        Analyses are carried out primarily in Python using pandas, NumPy, and visualization libraries to support both ad-hoc studies and structured reporting.",
+      "details": "I analyze complex and large-scale datasets to uncover patterns, validate data integrity, and derive actionable insights that inform model and system design. I can perform exploratory and statistical analysis, anomaly detection, and feature evaluation across structured and unstructured data.",
       "icons": [
         {
           "fontAwesomeClassname": "fab fa-python",
@@ -169,7 +169,7 @@
           "duration": 4
         }
       ],
-      "details": "I design, deploy, and maintain cloud-native systems on Azure and AWS, focusing on scalability, automation, and observability. \n        Infrastructure is defined as code using Bicep and Terraform to ensure reproducible, version-controlled environments. \n        Containerization with Docker and orchestration via Kubernetes enable modular, microservice-based architectures. \n        CI/CD pipelines built with GitHub Actions automate build, test, and release processes, while continuous monitoring ensures high availability and operational stability across environments.",
+      "details": "I design, deploy, and operate cloud-native infrastructures across multiple providers with a focus on automation, scalability, and security. I can build CI/CD pipelines, define infrastructure as code, and manage workloads using serverless, containerized, and distributed architectures.",
       "icons": [
         {
           "customIcon": "kubernetes",
@@ -205,7 +205,7 @@
           "duration": 2
         }
       ],
-      "details": "I'm currently exploring frontend development by creating lightweight interfaces to visualize data, test AI ideas, and prototype concepts. \n        For GenAI projects, I use Gradio and Streamlit to build quick interactive demos. When needed, I work with React, Next.js, and Tailwind CSS for responsive, maintainable UIs. \n        In my self-publishing projects, I use Canva and Adobe InDesign for layout and design, ensuring clean, consistent, and visually engaging results.",
+      "details": "I build lightweight interfaces to visualize data, prototype AI concepts, and demonstrate GenAI workflows. For LLM applications, I use Gradio and Streamlit to develop interactive demos. When needed, I rely on React, Next.js, and Tailwind CSS for production-ready front-ends. In self-publishing projects, I design layouts in Canva and Adobe InDesign, ensuring clean, consistent, and visually appealing results.",
       "icons": [
         {
           "fontAwesomeClassname": "fab fa-react",

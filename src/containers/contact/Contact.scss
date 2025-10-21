@@ -31,6 +31,10 @@
   text-decoration: none;
 }
 
+.contact-detail-email {
+  font-size: 28px;
+}
+
 .contact-detail:hover,
 .contact-detail-email:hover {
   color: $textColor;
@@ -93,6 +97,10 @@
   .contact-detail,
   .contact-detail-email {
     font-size: 20px;
+  }
+
+  .contact-detail-email {
+    font-size: 16px;
   }
 
   .contact-div-main {

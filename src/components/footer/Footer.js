@@ -20,7 +20,6 @@ export default function Footer() {
           >
             developerFolio
           </a>
-          , made by DeveloperFolio Team
         </p>
         <p
           className={

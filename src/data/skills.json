@@ -3,10 +3,10 @@
   "title": "At a Glance",
   "subTitle": "",
   "skills": [
-    "⚡ Design and operate batch and streaming data pipelines",
-    "⚡ Design and develop Generative AI solutions",
-    "⚡ Perform exploratory data analysis and data quality assessment",
-    "⚡ Design and operate scalable cloud architectures"
+    "⚡ Design, build and operate data pipelines for large-scale telemetry and analytics workloads",
+    "⚡ Design, develop and deploy Generative AI solutions across cloud environments",
+    "⚡ Conduct exploratory and anomaly analysis to ensure data integrity",
+    "⚡ Build resilient multi-cloud architectures that balance performance, cost, and security"
   ],
   "softwareSkills": [
     {
