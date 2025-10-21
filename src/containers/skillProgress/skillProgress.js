@@ -166,10 +166,20 @@ export default function StackProgress() {
                       {/* Render multiple periods as separate segments */}
                       {exp.periods ? (
                         exp.periods.map((period, periodIndex) => {
-                          const startPercentage =
-                            (period.start / maxYears) * 100;
+                          // Ensure start is within valid range [0, maxYears]
+                          const cappedStart = Math.max(
+                            0,
+                            Math.min(period.start, maxYears)
+                          );
+                          const startPercentage = (cappedStart / maxYears) * 100;
+                          
+                          // Cap the duration so that start + duration doesn't exceed maxYears
+                          const effectiveDuration = Math.max(
+                            0,
+                            Math.min(period.duration, maxYears - cappedStart)
+                          );
                           const durationPercentage =
-                            (period.duration / maxYears) * 100;
+                            (effectiveDuration / maxYears) * 100;
 
                           return (
                             <span

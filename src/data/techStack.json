@@ -9,8 +9,8 @@
       "Stack": "Data Engineering",
       "periods": [
         {
-          "start": 1,
-          "duration": 6
+          "start":3,
+          "duration": 4
         }
       ],
       "details": "I design and operate data systems that combine batch and streaming processing, primarily on Azure. \n        Data ingestion is event-driven or push/pull-based, integrating structured, semi-structured, and unstructured sources into Python-based pipelines and microservice architectures. \n        Transformations and aggregations are implemented according to use-case complexity, with storage spanning Redis, MongoDB, and PostgreSQL. \n        Monitoring and validation are handled through New Relic and automated testing to maintain reliability, scalability, and consistency across environments.",
@@ -165,8 +165,8 @@
       "Stack": "Cloud and DevOps",
       "periods": [
         {
-          "start": 2,
-          "duration": 5
+          "start": 3,
+          "duration": 4
         }
       ],
       "details": "I design, deploy, and maintain cloud-native systems on Azure and AWS, focusing on scalability, automation, and observability. \n        Infrastructure is defined as code using Bicep and Terraform to ensure reproducible, version-controlled environments. \n        Containerization with Docker and orchestration via Kubernetes enable modular, microservice-based architectures. \n        CI/CD pipelines built with GitHub Actions automate build, test, and release processes, while continuous monitoring ensures high availability and operational stability across environments.",
