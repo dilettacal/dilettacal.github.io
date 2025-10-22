@@ -24,7 +24,7 @@
       "descBullets": [
         "🤖 Developed production-ready GenAI solutions for survey response prediction, feedback summarization and agent-based project management automation.",
         "📍 Improved positional accuracy of over 78,000 charging stations by designing and operating large-scale EV telemetry pipelines for millions of vehicles of the Volkswagen Group.",
-        "📉 Significantly contributed to the migration from Databricks-Medallion architecture to Kubernetes-Microservices, achieving a reduction of operating costs by approximately 70% with increased stability of streaming pipelines.",
+        "📉 Contributed to the migration from a Databricks-based medallion architecture to containerized microservices on Kubernetes, resulting in a ~60% reduction in project-level cloud costs.",
         "👥 Led code reviews, mentoring and knowledge-sharing initiatives to ensure technical quality and prevent knowledge silos.",
         "📊 Conducted exploratory data analysis to ensure data integrity and data contract compliance; clarified anomalies in close collaboration with stakeholders."
       ]
