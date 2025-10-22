@@ -33,6 +33,8 @@ import {ReactComponent as PandasIcon} from "../assets/images/simpleicons/pandas.
 import {ReactComponent as OllamaIcon} from "../assets/images/simpleicons/ollama.svg";
 import {ReactComponent as CanvaIcon} from "../assets/images/svgrepo/canva-svgrepo-com.svg";
 import {ReactComponent as AdobeInDesignIcon} from "../assets/images/svgrepo/adobe-indesign-logo-svgrepo-com.svg";
+import {ReactComponent as SqlAlchemyIcon} from "../assets/images/simpleicons/sqlalchemy.svg";
+import {ReactComponent as WandB} from "../assets/images/simpleicons/weightsandbiases.svg";
 
 export const customIcons = {
   // AI/ML
@@ -52,6 +54,7 @@ export const customIcons = {
   postgresql: PostgreSQLIcon,
   mongodb: MongodbIcon,
   redis: RedisIcon,
+  sqlalchemy: SqlAlchemyIcon,
   
   // Cloud & DevOps
   azure: AzureIcon,
@@ -70,6 +73,7 @@ export const customIcons = {
   spacy: SpacyIcon,
   langchain: LangchainIcon,
   crewai: CrewaiIcon,
+  wandb: WandB,
   
   // Tools & IDEs
   jupyter: JupyterIcon,

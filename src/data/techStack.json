@@ -58,6 +58,10 @@
         {
           "customIcon": "pytest",
           "name": "Pytest"
+        },
+        {
+          "customIcon": "sqlalchemy",
+          "name": "SQLAlchemy"
         }
       ]
     },
@@ -106,6 +110,10 @@
         {
           "customIcon": "crewai",
           "name": "CrewAI"
+        },
+        {
+          "customIcon": "wandb",
+          "name": "Weights and Biases"
         },
         {
           "customIcon": "huggingface",
